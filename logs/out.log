@@ -1,0 +1,724 @@
+2026-03-22 17:37:36 +05:30: 📁 Download directory: C:\Users\neon\Downloads
+2026-03-22 17:37:36 +05:30: 
+
+2026-03-22 17:37:36 +05:30: ╔════════════════════════════════════════╗
+2026-03-22 17:37:36 +05:30: ║      🎬 MediaFlow Server Started 🎬      ║
+2026-03-22 17:37:36 +05:30: ╚════════════════════════════════════════╝
+2026-03-22 17:37:36 +05:30: 
+✅ Server running on: http://localhost:7860
+2026-03-22 17:37:36 +05:30: 📁 Files will be saved to: C:\Users\neon\Downloads
+2026-03-22 17:37:36 +05:30: 
+💡 Keep this window open while using the browser extension.
+
+2026-03-22 17:37:37 +05:30: ✅ yt-dlp: 2026.03.03
+2026-03-22 17:40:50 +05:30: 📁 Download directory: C:\Users\neon\Downloads
+2026-03-22 17:40:50 +05:30: 
+
+2026-03-22 17:40:50 +05:30: ╔════════════════════════════════════════╗
+2026-03-22 17:40:50 +05:30: ║      🎬 MediaFlow Server Started 🎬      ║
+2026-03-22 17:40:50 +05:30: ╚════════════════════════════════════════╝
+2026-03-22 17:40:50 +05:30: 
+✅ Server running on: http://localhost:7860
+2026-03-22 17:40:50 +05:30: 📁 Files will be saved to: C:\Users\neon\Downloads
+2026-03-22 17:40:50 +05:30: 
+💡 Available endpoints:
+2026-03-22 17:40:50 +05:30:    GET  http://localhost:7860/api/ping      - Check if server is running
+2026-03-22 17:40:50 +05:30:    GET  http://localhost:7860/api/test      - Test yt-dlp & ffmpeg
+2026-03-22 17:40:50 +05:30:    POST http://localhost:7860/api/download  - Download media
+2026-03-22 17:40:50 +05:30: 
+💡 Keep this window open while using the extension.
+
+2026-03-22 17:40:51 +05:30: ✅ yt-dlp: 2026.03.03
+2026-03-22 17:47:07 +05:30: ⬇️  Starting audio download from: https://www.youtube.com/watch?v=lRp0zad_NIc&list=RDlRp0zad_NIc&start_radio=1
+2026-03-22 17:47:07 +05:30: 🔧 Command: yt-dlp -f bestaudio --extract-audio --audio-format mp3 --audio-quality 192K -o "C:\Users\neon\Downloads\%(title)s.%(ext)s" "[URL]"
+2026-03-22 17:47:08 +05:30: 📊 Progress: [youtube:tab] Extracting URL: https://www.youtube.com/watch?v=lRp0zad_NIc&list=RDlRp0zad_NIc&start_radio=1
+2026-03-22 17:47:08 +05:30: 📊 Progress: [youtube:tab] Downloading playlist RDlRp0zad_NIc - add --no-playlist to download just the video lRp0zad_NIc
+[youtube:tab] RDlRp0zad_NIc: Downloading webpage
+2026-03-22 17:47:10 +05:30: 📊 Progress: [download] Downloading playlist: Mix - Nito - shinobi
+2026-03-22 17:47:10 +05:30: 📊 Progress: [youtube:tab] RDlRp0zad_NIc page 1: Downloading API JSON
+2026-03-22 17:47:11 +05:30: 📊 Progress: [youtube:tab] RDlRp0zad_NIc page 2: Downloading API JSON
+2026-03-22 17:47:12 +05:30: 📊 Progress: [youtube:tab] RDlRp0zad_NIc page 3: Downloading API JSON
+2026-03-22 17:47:13 +05:30: 📊 Progress: [youtube:tab] RDlRp0zad_NIc page 4: Downloading API JSON
+2026-03-22 17:47:14 +05:30: 📊 Progress: [youtube:tab] RDlRp0zad_NIc page 5: Downloading API JSON
+2026-03-22 17:47:17 +05:30: 📊 Progress: [youtube:tab] RDlRp0zad_NIc page 6: Downloading API JSON
+2026-03-22 17:47:18 +05:30: 📊 Progress: [youtube:tab] RDlRp0zad_NIc page 7: Downloading API JSON
+2026-03-22 17:47:19 +05:30: 📊 Progress: [youtube:tab] RDlRp0zad_NIc page 8: Downloading API JSON
+2026-03-22 17:47:20 +05:30: 📊 Progress: [youtube:tab] RDlRp0zad_NIc page 9: Downloading API JSON
+2026-03-22 17:47:21 +05:30: 📊 Progress: [youtube:tab] RDlRp0zad_NIc page 10: Downloading API JSON
+2026-03-22 17:47:22 +05:30: 📊 Progress: [youtube:tab] RDlRp0zad_NIc page 11: Downloading API JSON
+2026-03-22 17:47:24 +05:30: 📊 Progress: [youtube:tab] RDlRp0zad_NIc page 12: Downloading API JSON
+2026-03-22 17:47:25 +05:30: 📊 Progress: [youtube:tab] RDlRp0zad_NIc page 13: Downloading API JSON
+2026-03-22 17:47:26 +05:30: 📊 Progress: [youtube:tab] Playlist Mix - Nito - shinobi: Downloading 324 items of 324
+2026-03-22 17:47:26 +05:30: 📊 Progress: [download] Downloading item 1 of 324
+2026-03-22 17:47:26 +05:30: 📊 Progress: [youtube] Extracting URL: https://www.youtube.com/watch?v=lRp0zad_NIc
+2026-03-22 17:47:26 +05:30: 📊 Progress: [youtube] lRp0zad_NIc: Downloading webpage
+2026-03-22 17:47:27 +05:30: ⚠️  Info: WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one
+2026-03-22 17:47:27 +05:30: 📊 Progress: [youtube] lRp0zad_NIc: Downloading android vr player API JSON
+2026-03-22 17:47:27 +05:30: 📊 Progress: [info] lRp0zad_NIc: Downloading 1 format(s): 251
+2026-03-22 17:47:28 +05:30: 📊 Progress: [download] Destination: C:\Users\neon\Downloads\Nito - shinobi.webm
+2026-03-22 17:47:28 +05:30: 📊 Progress: [download]   0.1% of    1.55MiB at   15.37KiB/s ETA 01:43
+2026-03-22 17:47:28 +05:30: 📊 Progress: [download]   0.2% of    1.55MiB at   39.42KiB/s ETA 00:40
+2026-03-22 17:47:28 +05:30: 📊 Progress: [download]   0.4% of    1.55MiB at   91.56KiB/s ETA 00:17
+2026-03-22 17:47:28 +05:30: 📊 Progress: [download]   0.9% of    1.55MiB at  195.07KiB/s ETA 00:08
+2026-03-22 17:47:28 +05:30: 📊 Progress: [download]   2.0% of    1.55MiB at  378.01KiB/s ETA 00:04
+2026-03-22 17:47:28 +05:30: 📊 Progress: [download]   4.0% of    1.55MiB at  404.07KiB/s ETA 00:03
+2026-03-22 17:47:28 +05:30: 📊 Progress: [download]   8.0% of    1.55MiB at  587.14KiB/s ETA 00:02
+2026-03-22 17:47:28 +05:30: 📊 Progress: [download]  16.1% of    1.55MiB at  903.48KiB/s ETA 00:01
+2026-03-22 17:47:28 +05:30: 📊 Progress: [download]  32.2% of    1.55MiB at    1.39MiB/s ETA 00:00
+2026-03-22 17:47:28 +05:30: 📊 Progress: [download]  64.5% of    1.55MiB at    2.27MiB/s ETA 00:00
+2026-03-22 17:47:28 +05:30: 📊 Progress: [download] 100.0% of    1.55MiB at    3.25MiB/s ETA 00:00
+2026-03-22 17:47:28 +05:30: 📊 Progress: [download] 100% of    1.55MiB in 00:00:01 at 1.42MiB/s
+2026-03-22 17:47:28 +05:30: 📊 Progress: 
+2026-03-22 17:47:28 +05:30: 📊 Progress: [ExtractAudio] Destination: C:\Users\neon\Downloads\Nito - shinobi.mp3
+2026-03-22 17:47:29 +05:30: 📊 Progress: Deleting original file C:\Users\neon\Downloads\Nito - shinobi.webm (pass -k to keep)
+2026-03-22 17:47:30 +05:30: 📊 Progress: [download] Downloading item 2 of 324
+2026-03-22 17:47:30 +05:30: 📊 Progress: [youtube] Extracting URL: https://www.youtube.com/watch?v=jnVVX_RWCfE
+[youtube] jnVVX_RWCfE: Downloading webpage
+2026-03-22 17:47:31 +05:30: ⚠️  Info: WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one
+2026-03-22 17:47:31 +05:30: 📊 Progress: [youtube] jnVVX_RWCfE: Downloading android vr player API JSON
+2026-03-22 17:47:31 +05:30: 📊 Progress: [info] jnVVX_RWCfE: Downloading 1 format(s): 251
+2026-03-22 17:47:32 +05:30: 📊 Progress: [download] Destination: C:\Users\neon\Downloads\TWO LANES - Transcend.webm
+2026-03-22 17:47:32 +05:30: 📊 Progress: [download]   0.0% of    4.78MiB at   23.59KiB/s ETA 03:27
+2026-03-22 17:47:32 +05:30: 📊 Progress: [download]   0.1% of    4.78MiB at   70.12KiB/s ETA 01:09
+2026-03-22 17:47:32 +05:30: 📊 Progress: [download]   0.1% of    4.78MiB at  162.75KiB/s ETA 00:30
+2026-03-22 17:47:32 +05:30: 📊 Progress: [download]   0.3% of    4.78MiB at  345.33KiB/s ETA 00:14
+2026-03-22 17:47:32 +05:30: 📊 Progress: [download]   0.6% of    4.78MiB at  578.51KiB/s ETA 00:08
+2026-03-22 17:47:32 +05:30: 📊 Progress: [download]   1.3% of    4.78MiB at  739.63KiB/s ETA 00:06
+2026-03-22 17:47:32 +05:30: 📊 Progress: [download]   2.6% of    4.78MiB at    1.03MiB/s ETA 00:04
+2026-03-22 17:47:32 +05:30: 📊 Progress: [download]   5.2% of    4.78MiB at    1.49MiB/s ETA 00:03
+2026-03-22 17:47:32 +05:30: 📊 Progress: [download]  10.4% of    4.78MiB at    2.19MiB/s ETA 00:01
+2026-03-22 17:47:32 +05:30: 📊 Progress: [download]  20.9% of    4.78MiB at    3.59MiB/s ETA 00:01
+2026-03-22 17:47:32 +05:30: 📊 Progress: [download]  41.8% of    4.78MiB at    5.55MiB/s ETA 00:00
+2026-03-22 17:47:33 +05:30: ⬇️  Starting audio download from: https://www.youtube.com/watch?v=lRp0zad_NIc&list=RDlRp0zad_NIc&start_radio=1
+2026-03-22 17:47:33 +05:30: 🔧 Command: yt-dlp -f bestaudio --extract-audio --audio-format mp3 --audio-quality 192K -o "C:\Users\neon\Downloads\%(title)s.%(ext)s" "[URL]"
+2026-03-22 17:47:33 +05:30: 📊 Progress: [download]  83.7% of    4.78MiB at    3.37MiB/s ETA 00:00
+2026-03-22 17:47:34 +05:30: 📊 Progress: [download] 100.0% of    4.78MiB at    2.87MiB/s ETA 00:00
+2026-03-22 17:47:34 +05:30: 📊 Progress: [download] 100% of    4.78MiB in 00:00:02 at 2.19MiB/s
+2026-03-22 17:47:34 +05:30: 📊 Progress: 
+2026-03-22 17:47:34 +05:30: 📊 Progress: [youtube:tab] Extracting URL: https://www.youtube.com/watch?v=lRp0zad_NIc&list=RDlRp0zad_NIc&start_radio=1
+2026-03-22 17:47:34 +05:30: 📊 Progress: [youtube:tab] Downloading playlist RDlRp0zad_NIc - add --no-playlist to download just the video lRp0zad_NIc
+[youtube:tab] RDlRp0zad_NIc: Downloading webpage
+2026-03-22 17:47:34 +05:30: 📊 Progress: [ExtractAudio] Destination: C:\Users\neon\Downloads\TWO LANES - Transcend.mp3
+2026-03-22 17:47:35 +05:30: 📊 Progress: [download] Downloading playlist: Mix - Nito - shinobi
+2026-03-22 17:47:35 +05:30: 📊 Progress: [youtube:tab] RDlRp0zad_NIc page 1: Downloading API JSON
+2026-03-22 17:47:36 +05:30: 📊 Progress: [youtube:tab] RDlRp0zad_NIc page 2: Downloading API JSON
+2026-03-22 17:47:37 +05:30: 📊 Progress: [youtube:tab] RDlRp0zad_NIc page 3: Downloading API JSON
+2026-03-22 17:47:38 +05:30: 📊 Progress: Deleting original file C:\Users\neon\Downloads\TWO LANES - Transcend.webm (pass -k to keep)
+2026-03-22 17:47:38 +05:30: 📊 Progress: [download] Downloading item 3 of 324
+2026-03-22 17:47:38 +05:30: 📊 Progress: [youtube] Extracting URL: https://www.youtube.com/watch?v=nO0twJ-6TIw
+[youtube] nO0twJ-6TIw: Downloading webpage
+2026-03-22 17:47:38 +05:30: 📊 Progress: [youtube:tab] RDlRp0zad_NIc page 4: Downloading API JSON
+2026-03-22 17:47:39 +05:30: ⚠️  Info: WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one
+2026-03-22 17:47:39 +05:30: 📊 Progress: [youtube] nO0twJ-6TIw: Downloading android vr player API JSON
+2026-03-22 17:47:39 +05:30: 📊 Progress: [info] nO0twJ-6TIw: Downloading 1 format(s): 251
+2026-03-22 17:47:39 +05:30: 📊 Progress: [youtube:tab] RDlRp0zad_NIc page 5: Downloading API JSON
+2026-03-22 17:47:40 +05:30: 📊 Progress: [download] Destination: C:\Users\neon\Downloads\Ichika Nito - HOME (Official Music Video).webm
+2026-03-22 17:47:40 +05:30: 📊 Progress: [download]   0.0% of    2.30MiB at   18.44KiB/s ETA 02:07
+2026-03-22 17:47:40 +05:30: 📊 Progress: [download]   0.1% of    2.30MiB at   54.87KiB/s ETA 00:42
+2026-03-22 17:47:40 +05:30: 📊 Progress: [download]   0.3% of    2.30MiB at  127.52KiB/s ETA 00:18
+2026-03-22 17:47:40 +05:30: 📊 Progress: [download]   0.6% of    2.30MiB at  271.50KiB/s ETA 00:08
+2026-03-22 17:47:40 +05:30: 📊 Progress: [download]   1.3% of    2.30MiB at  522.02KiB/s ETA 00:04
+2026-03-22 17:47:40 +05:30: 📊 Progress: [download]   2.7% of    2.30MiB at  519.49KiB/s ETA 00:04
+2026-03-22 17:47:40 +05:30: 📊 Progress: [download]   5.4% of    2.30MiB at  757.61KiB/s ETA 00:02
+2026-03-22 17:47:40 +05:30: 📊 Progress: [download]  10.8% of    2.30MiB at    1.07MiB/s ETA 00:01
+2026-03-22 17:47:40 +05:30: 📊 Progress: [download]  21.7% of    2.30MiB at    1.77MiB/s ETA 00:01
+2026-03-22 17:47:40 +05:30: 📊 Progress: [download]  43.4% of    2.30MiB at    2.85MiB/s ETA 00:00
+2026-03-22 17:47:40 +05:30: 📊 Progress: [download]  86.8% of    2.30MiB at    4.89MiB/s ETA 00:00
+2026-03-22 17:47:40 +05:30: 📊 Progress: [download] 100.0% of    2.30MiB at    5.37MiB/s ETA 00:00
+2026-03-22 17:47:40 +05:30: 📊 Progress: [download] 100% of    2.30MiB in 00:00:00 at 2.31MiB/s
+2026-03-22 17:47:40 +05:30: 📊 Progress: 
+2026-03-22 17:47:40 +05:30: 📊 Progress: [ExtractAudio] Destination: C:\Users\neon\Downloads\Ichika Nito - HOME (Official Music Video).mp3
+2026-03-22 17:47:40 +05:30: 📊 Progress: [youtube:tab] RDlRp0zad_NIc page 6: Downloading API JSON
+2026-03-22 17:47:41 +05:30: 📊 Progress: [youtube:tab] RDlRp0zad_NIc page 7: Downloading API JSON
+2026-03-22 17:47:42 +05:30: 📊 Progress: Deleting original file C:\Users\neon\Downloads\Ichika Nito - HOME (Official Music Video).webm (pass -k to keep)
+2026-03-22 17:47:42 +05:30: 📊 Progress: [download] Downloading item 4 of 324
+2026-03-22 17:47:42 +05:30: 📊 Progress: [youtube] Extracting URL: https://www.youtube.com/watch?v=Z5NoQg8LdDk
+[youtube] Z5NoQg8LdDk: Downloading webpage
+2026-03-22 17:47:43 +05:30: 📊 Progress: [youtube:tab] RDlRp0zad_NIc page 8: Downloading API JSON
+2026-03-22 17:47:43 +05:30: ⚠️  Info: WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one
+2026-03-22 17:47:43 +05:30: 📊 Progress: [youtube] Z5NoQg8LdDk: Downloading android vr player API JSON
+2026-03-22 17:47:43 +05:30: 📊 Progress: [info] Z5NoQg8LdDk: Downloading 1 format(s): 251
+2026-03-22 17:47:44 +05:30: 📊 Progress: [youtube:tab] RDlRp0zad_NIc page 9: Downloading API JSON
+2026-03-22 17:47:44 +05:30: 📊 Progress: [download] Destination: C:\Users\neon\Downloads\Polyphia - Playing God (Official Music Video).webm
+2026-03-22 17:47:44 +05:30: 📊 Progress: [download]   0.0% of    3.56MiB at   17.87KiB/s ETA 03:24
+2026-03-22 17:47:44 +05:30: 📊 Progress: [download]   0.1% of    3.56MiB at   53.10KiB/s ETA 01:08
+2026-03-22 17:47:44 +05:30: 📊 Progress: [download]   0.2% of    3.56MiB at  123.13KiB/s ETA 00:29
+2026-03-22 17:47:44 +05:30: 📊 Progress: [download]   0.4% of    3.56MiB at  261.63KiB/s ETA 00:13
+2026-03-22 17:47:44 +05:30: 📊 Progress: [download]   0.9% of    3.56MiB at  363.52KiB/s ETA 00:09
+2026-03-22 17:47:44 +05:30: 📊 Progress: [download]   1.7% of    3.56MiB at  443.74KiB/s ETA 00:08
+2026-03-22 17:47:44 +05:30: 📊 Progress: [download]   3.5% of    3.56MiB at  599.12KiB/s ETA 00:05
+2026-03-22 17:47:44 +05:30: 📊 Progress: [download]   7.0% of    3.56MiB at  917.36KiB/s ETA 00:03
+2026-03-22 17:47:45 +05:30: 📊 Progress: [download]  14.0% of    3.56MiB at    1.43MiB/s ETA 00:02
+2026-03-22 17:47:45 +05:30: 📊 Progress: [download]  28.1% of    3.56MiB at    2.41MiB/s ETA 00:01
+2026-03-22 17:47:45 +05:30: 📊 Progress: [download]  56.1% of    3.56MiB at    3.89MiB/s ETA 00:00
+2026-03-22 17:47:45 +05:30: 📊 Progress: [download] 100.0% of    3.56MiB at    5.42MiB/s ETA 00:00
+2026-03-22 17:47:45 +05:30: 📊 Progress: [download] 100% of    3.56MiB in 00:00:01 at 2.23MiB/s
+2026-03-22 17:47:45 +05:30: 📊 Progress: 
+2026-03-22 17:47:45 +05:30: 📊 Progress: [ExtractAudio] Destination: C:\Users\neon\Downloads\Polyphia - Playing God (Official Music Video).mp3
+2026-03-22 17:47:45 +05:30: 📊 Progress: [youtube:tab] RDlRp0zad_NIc page 10: Downloading API JSON
+2026-03-22 17:47:46 +05:30: 📊 Progress: [youtube:tab] RDlRp0zad_NIc page 11: Downloading API JSON
+2026-03-22 17:47:47 +05:30: 📊 Progress: [youtube:tab] RDlRp0zad_NIc page 12: Downloading API JSON
+2026-03-22 17:47:47 +05:30: 📊 Progress: Deleting original file C:\Users\neon\Downloads\Polyphia - Playing God (Official Music Video).webm (pass -k to keep)
+2026-03-22 17:47:47 +05:30: 📊 Progress: [download] Downloading item 5 of 324
+2026-03-22 17:47:47 +05:30: 📊 Progress: [youtube] Extracting URL: https://www.youtube.com/watch?v=rCcDEwT200s
+[youtube] rCcDEwT200s: Downloading webpage
+2026-03-22 17:47:48 +05:30: 📊 Progress: [youtube:tab] RDlRp0zad_NIc page 13: Downloading API JSON
+2026-03-22 17:47:48 +05:30: ⚠️  Info: WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one
+2026-03-22 17:47:48 +05:30: 📊 Progress: [youtube] rCcDEwT200s: Downloading android vr player API JSON
+2026-03-22 17:47:49 +05:30: 📊 Progress: [info] rCcDEwT200s: Downloading 1 format(s): 251
+2026-03-22 17:47:50 +05:30: 📊 Progress: [download] Destination: C:\Users\neon\Downloads\Ichika Nito - The Moon�s Elbow feat. Marcin (Official Music Video).webm
+2026-03-22 17:47:50 +05:30: 📊 Progress: [download]   0.0% of    3.33MiB at   20.88KiB/s ETA 02:43
+2026-03-22 17:47:50 +05:30: 📊 Progress: [download]   0.1% of    3.33MiB at   61.95KiB/s ETA 00:54
+2026-03-22 17:47:50 +05:30: 📊 Progress: [download]   0.2% of    3.33MiB at  143.85KiB/s ETA 00:23
+2026-03-22 17:47:50 +05:30: 📊 Progress: [download]   0.4% of    3.33MiB at  305.50KiB/s ETA 00:11
+2026-03-22 17:47:50 +05:30: 📊 Progress: [download]   0.9% of    3.33MiB at  568.51KiB/s ETA 00:05
+2026-03-22 17:47:50 +05:30: 📊 Progress: [youtube:tab] Playlist Mix - Nito - shinobi: Downloading 299 items of 299
+2026-03-22 17:47:50 +05:30: 📊 Progress: [download] Downloading item 1 of 299
+2026-03-22 17:47:50 +05:30: 📊 Progress: [youtube] Extracting URL: https://www.youtube.com/watch?v=lRp0zad_NIc
+2026-03-22 17:47:50 +05:30: 📊 Progress: [youtube] lRp0zad_NIc: Downloading webpage
+2026-03-22 17:47:50 +05:30: 📊 Progress: [download]   1.8% of    3.33MiB at  569.35KiB/s ETA 00:05
+2026-03-22 17:47:50 +05:30: 📊 Progress: [download]   3.7% of    3.33MiB at  742.36KiB/s ETA 00:04
+2026-03-22 17:47:50 +05:30: 📊 Progress: [download]   7.5% of    3.33MiB at    1.08MiB/s ETA 00:02
+2026-03-22 17:47:50 +05:30: 📊 Progress: [download]  15.0% of    3.33MiB at    1.80MiB/s ETA 00:01
+2026-03-22 17:47:50 +05:30: 📊 Progress: [download]  30.0% of    3.33MiB at    2.88MiB/s ETA 00:00
+2026-03-22 17:47:50 +05:30: 📊 Progress: [download]  60.1% of    3.33MiB at    4.13MiB/s ETA 00:00
+2026-03-22 17:47:50 +05:30: 📊 Progress: [download] 100.0% of    3.33MiB at    5.32MiB/s ETA 00:00
+2026-03-22 17:47:50 +05:30: 📊 Progress: [download] 100% of    3.33MiB in 00:00:01 at 2.52MiB/s
+2026-03-22 17:47:50 +05:30: 📊 Progress: 
+2026-03-22 17:47:50 +05:30: 📊 Progress: [ExtractAudio] Destination: C:\Users\neon\Downloads\Ichika Nito - The Moon�s Elbow feat. Marcin (Official Music Video).mp3
+2026-03-22 17:47:51 +05:30: ⚠️  Info: WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one
+2026-03-22 17:47:51 +05:30: 📊 Progress: [youtube] lRp0zad_NIc: Downloading android vr player API JSON
+2026-03-22 17:47:51 +05:30: 📊 Progress: [info] lRp0zad_NIc: Downloading 1 format(s): 251
+2026-03-22 17:47:51 +05:30: 📊 Progress: [download] C:\Users\neon\Downloads\Nito - shinobi.mp3 has already been downloaded
+2026-03-22 17:47:51 +05:30: 📊 Progress: [ExtractAudio] Not converting audio C:\Users\neon\Downloads\Nito - shinobi.mp3; file is already in target format mp3
+2026-03-22 17:47:51 +05:30: 📊 Progress: [download] Downloading item 2 of 299
+2026-03-22 17:47:51 +05:30: 📊 Progress: [youtube] Extracting URL: https://www.youtube.com/watch?v=91cWrs8O3X8
+2026-03-22 17:47:51 +05:30: 📊 Progress: [youtube] 91cWrs8O3X8: Downloading webpage
+2026-03-22 17:47:52 +05:30: ⚠️  Info: WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one
+2026-03-22 17:47:52 +05:30: 📊 Progress: [youtube] 91cWrs8O3X8: Downloading android vr player API JSON
+2026-03-22 17:47:53 +05:30: 📊 Progress: Deleting original file C:\Users\neon\Downloads\Ichika Nito - The Moon�s Elbow feat. Marcin (Official Music Video).webm (pass -k to keep)
+2026-03-22 17:47:53 +05:30: 📊 Progress: [download] Downloading item 6 of 324
+2026-03-22 17:47:53 +05:30: 📊 Progress: [youtube] Extracting URL: https://www.youtube.com/watch?v=FGM3U3buQj0
+[youtube] FGM3U3buQj0: Downloading webpage
+2026-03-22 17:47:53 +05:30: 📊 Progress: [info] 91cWrs8O3X8: Downloading 1 format(s): 251
+2026-03-22 17:47:53 +05:30: 📊 Progress: [download] Destination: C:\Users\neon\Downloads\Sad Song Compilation Ichika Nito.webm
+2026-03-22 17:47:53 +05:30: 📊 Progress: [download]   0.0% of    7.24MiB at   22.99KiB/s ETA 05:22
+2026-03-22 17:47:53 +05:30: 📊 Progress: [download]   0.0% of    7.24MiB at   68.16KiB/s ETA 01:48
+2026-03-22 17:47:53 +05:30: 📊 Progress: [download]   0.1% of    7.24MiB at  158.14KiB/s ETA 00:46
+2026-03-22 17:47:53 +05:30: 📊 Progress: [download]   0.2% of    7.24MiB at  336.07KiB/s ETA 00:22
+2026-03-22 17:47:53 +05:30: 📊 Progress: [download]   0.4% of    7.24MiB at  507.67KiB/s ETA 00:14
+2026-03-22 17:47:53 +05:30: 📊 Progress: [download]   0.8% of    7.24MiB at  646.66KiB/s ETA 00:11
+2026-03-22 17:47:53 +05:30: 📊 Progress: [download]   1.7% of    7.24MiB at  910.59KiB/s ETA 00:08
+2026-03-22 17:47:53 +05:30: 📊 Progress: [download]   3.4% of    7.24MiB at    1.33MiB/s ETA 00:05
+2026-03-22 17:47:53 +05:30: 📊 Progress: [download]   6.9% of    7.24MiB at    1.92MiB/s ETA 00:03
+2026-03-22 17:47:53 +05:30: 📊 Progress: [download]  13.8% of    7.24MiB at    3.15MiB/s ETA 00:01
+2026-03-22 17:47:53 +05:30: 📊 Progress: [download]  27.6% of    7.24MiB at    5.16MiB/s ETA 00:01
+2026-03-22 17:47:54 +05:30: 📊 Progress: [download]  55.2% of    7.24MiB at    5.02MiB/s ETA 00:00
+2026-03-22 17:47:54 +05:30: ⚠️  Info: WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one
+2026-03-22 17:47:54 +05:30: 📊 Progress: [youtube] FGM3U3buQj0: Downloading android vr player API JSON
+2026-03-22 17:47:54 +05:30: 📊 Progress: [info] FGM3U3buQj0: Downloading 1 format(s): 251
+2026-03-22 17:47:55 +05:30: 📊 Progress: [download] 100.0% of    7.24MiB at    4.19MiB/s ETA 00:00
+2026-03-22 17:47:55 +05:30: 📊 Progress: [download] 100% of    7.24MiB in 00:00:02 at 3.39MiB/s
+2026-03-22 17:47:55 +05:30: 📊 Progress: 
+2026-03-22 17:47:55 +05:30: 📊 Progress: [ExtractAudio] Destination: C:\Users\neon\Downloads\Sad Song Compilation Ichika Nito.mp3
+2026-03-22 17:47:55 +05:30: 📊 Progress: [download] Destination: C:\Users\neon\Downloads\Marcin, Tim Henson - Classical Dragon (Official Video).webm
+2026-03-22 17:47:55 +05:30: 📊 Progress: [download]   0.0% of    3.68MiB at   17.88KiB/s ETA 03:30
+2026-03-22 17:47:55 +05:30: 📊 Progress: [download]   0.1% of    3.68MiB at   53.25KiB/s ETA 01:10
+2026-03-22 17:47:55 +05:30: 📊 Progress: [download]   0.2% of    3.68MiB at  122.66KiB/s ETA 00:30
+2026-03-22 17:47:55 +05:30: 📊 Progress: [download]   0.4% of    3.68MiB at  261.12KiB/s ETA 00:14
+2026-03-22 17:47:56 +05:30: 📊 Progress: [download]   0.8% of    3.68MiB at  425.00KiB/s ETA 00:08
+2026-03-22 17:47:56 +05:30: 📊 Progress: [download]   1.7% of    3.68MiB at  496.92KiB/s ETA 00:07
+2026-03-22 17:47:56 +05:30: 📊 Progress: [download]   3.4% of    3.68MiB at  723.08KiB/s ETA 00:05
+2026-03-22 17:47:56 +05:30: 📊 Progress: [download]   6.8% of    3.68MiB at    1.06MiB/s ETA 00:03
+2026-03-22 17:47:56 +05:30: 📊 Progress: [download]  13.6% of    3.68MiB at    1.66MiB/s ETA 00:01
+2026-03-22 17:47:56 +05:30: 📊 Progress: [download]  27.2% of    3.68MiB at    2.81MiB/s ETA 00:00
+2026-03-22 17:47:56 +05:30: 📊 Progress: [download]  54.3% of    3.68MiB at    4.00MiB/s ETA 00:00
+2026-03-22 17:47:56 +05:30: 📊 Progress: [download] 100.0% of    3.68MiB at    6.65MiB/s ETA 00:00
+2026-03-22 17:47:56 +05:30: 📊 Progress: [download] 100% of    3.68MiB in 00:00:01 at 2.20MiB/s
+2026-03-22 17:47:56 +05:30: 📊 Progress: 
+2026-03-22 17:47:56 +05:30: 📊 Progress: [ExtractAudio] Destination: C:\Users\neon\Downloads\Marcin, Tim Henson - Classical Dragon (Official Video).mp3
+2026-03-22 17:47:59 +05:30: 📊 Progress: Deleting original file C:\Users\neon\Downloads\Marcin, Tim Henson - Classical Dragon (Official Video).webm (pass -k to keep)
+2026-03-22 17:47:59 +05:30: 📊 Progress: [download] Downloading item 7 of 324
+2026-03-22 17:47:59 +05:30: 📊 Progress: [youtube] Extracting URL: https://www.youtube.com/watch?v=kt3jPiUs5MM
+[youtube] kt3jPiUs5MM: Downloading webpage
+2026-03-22 17:47:59 +05:30: 📊 Progress: Deleting original file C:\Users\neon\Downloads\Sad Song Compilation Ichika Nito.webm (pass -k to keep)
+2026-03-22 17:47:59 +05:30: 📊 Progress: [download] Downloading item 3 of 299
+2026-03-22 17:47:59 +05:30: 📊 Progress: [youtube] Extracting URL: https://www.youtube.com/watch?v=UDT2vRxCxck
+[youtube] UDT2vRxCxck: Downloading webpage
+2026-03-22 17:48:00 +05:30: ⚠️  Info: WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one
+2026-03-22 17:48:00 +05:30: 📊 Progress: [youtube] UDT2vRxCxck: Downloading android vr player API JSON
+2026-03-22 17:48:00 +05:30: ⚠️  Info: WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one
+2026-03-22 17:48:00 +05:30: 📊 Progress: [youtube] kt3jPiUs5MM: Downloading android vr player API JSON
+2026-03-22 17:48:00 +05:30: 📊 Progress: [info] UDT2vRxCxck: Downloading 1 format(s): 251
+2026-03-22 17:48:00 +05:30: 📊 Progress: [info] kt3jPiUs5MM: Downloading 1 format(s): 251
+2026-03-22 17:48:01 +05:30: 📊 Progress: [download] Destination: C:\Users\neon\Downloads\Ichika Nito - Isolation.webm
+2026-03-22 17:48:01 +05:30: 📊 Progress: [download]   0.0% of    2.94MiB at   15.02KiB/s ETA 03:20
+2026-03-22 17:48:01 +05:30: 📊 Progress: [download]   0.1% of    2.94MiB at   44.62KiB/s ETA 01:07
+2026-03-22 17:48:01 +05:30: 📊 Progress: [download]   0.2% of    2.94MiB at  103.64KiB/s ETA 00:28
+2026-03-22 17:48:01 +05:30: 📊 Progress: [download]   0.5% of    2.94MiB at  220.02KiB/s ETA 00:13
+2026-03-22 17:48:01 +05:30: 📊 Progress: [download]   1.0% of    2.94MiB at  244.42KiB/s ETA 00:12
+2026-03-22 17:48:01 +05:30: 📊 Progress: [download]   2.1% of    2.94MiB at  358.03KiB/s ETA 00:08
+2026-03-22 17:48:01 +05:30: 📊 Progress: [download]   4.2% of    2.94MiB at  545.94KiB/s ETA 00:05
+2026-03-22 17:48:01 +05:30: 📊 Progress: [download]   8.5% of    2.94MiB at  851.19KiB/s ETA 00:03
+2026-03-22 17:48:02 +05:30: 📊 Progress: [download]  17.0% of    2.94MiB at    1.44MiB/s ETA 00:01
+2026-03-22 17:48:02 +05:30: 📊 Progress: [download]  34.0% of    2.94MiB at    2.40MiB/s ETA 00:00
+2026-03-22 17:48:02 +05:30: 📊 Progress: [download]  68.0% of    2.94MiB at    4.04MiB/s ETA 00:00
+2026-03-22 17:48:02 +05:30: 📊 Progress: [download] 100.0% of    2.94MiB at    5.03MiB/s ETA 00:00
+2026-03-22 17:48:02 +05:30: 📊 Progress: [download] 100% of    2.94MiB in 00:00:01 at 1.98MiB/s
+2026-03-22 17:48:02 +05:30: 📊 Progress: 
+2026-03-22 17:48:02 +05:30: 📊 Progress: [ExtractAudio] Destination: C:\Users\neon\Downloads\Ichika Nito - Isolation.mp3
+2026-03-22 17:48:02 +05:30: 📊 Progress: [download] Destination: C:\Users\neon\Downloads\I Play 14 String Guitar.webm
+2026-03-22 17:48:02 +05:30: 📊 Progress: [download]   0.1% of    1.16MiB at   16.16KiB/s ETA 01:13
+2026-03-22 17:48:02 +05:30: 📊 Progress: [download]   0.3% of    1.16MiB at   48.20KiB/s ETA 00:24
+2026-03-22 17:48:02 +05:30: 📊 Progress: [download]   0.6% of    1.16MiB at  111.88KiB/s ETA 00:10
+2026-03-22 17:48:02 +05:30: 📊 Progress: [download]   1.3% of    1.16MiB at  238.43KiB/s ETA 00:04
+2026-03-22 17:48:02 +05:30: 📊 Progress: [download]   2.6% of    1.16MiB at  367.25KiB/s ETA 00:03
+2026-03-22 17:48:02 +05:30: 📊 Progress: [download]   5.3% of    1.16MiB at  434.22KiB/s ETA 00:02
+2026-03-22 17:48:02 +05:30: 📊 Progress: [download]  10.7% of    1.16MiB at  603.68KiB/s ETA 00:01
+2026-03-22 17:48:02 +05:30: 📊 Progress: [download]  21.4% of    1.16MiB at  895.72KiB/s ETA 00:01
+2026-03-22 17:48:02 +05:30: 📊 Progress: [download]  43.0% of    1.16MiB at    1.45MiB/s ETA 00:00
+2026-03-22 17:48:02 +05:30: 📊 Progress: [download]  86.0% of    1.16MiB at    2.39MiB/s ETA 00:00
+2026-03-22 17:48:02 +05:30: 📊 Progress: [download] 100.0% of    1.16MiB at    2.60MiB/s ETA 00:00
+2026-03-22 17:48:02 +05:30: 📊 Progress: [download] 100% of    1.16MiB in 00:00:01 at 660.27KiB/s
+2026-03-22 17:48:02 +05:30: 📊 Progress: 
+2026-03-22 17:48:02 +05:30: 📊 Progress: [ExtractAudio] Destination: C:\Users\neon\Downloads\I Play 14 String Guitar.mp3
+2026-03-22 17:48:03 +05:30: 📊 Progress: Deleting original file C:\Users\neon\Downloads\I Play 14 String Guitar.webm (pass -k to keep)
+2026-03-22 17:48:03 +05:30: 📊 Progress: [download] Downloading item 8 of 324
+2026-03-22 17:48:03 +05:30: 📊 Progress: [youtube] Extracting URL: https://www.youtube.com/watch?v=DRfzittQ4Wc
+[youtube] DRfzittQ4Wc: Downloading webpage
+2026-03-22 17:48:04 +05:30: 📊 Progress: Deleting original file C:\Users\neon\Downloads\Ichika Nito - Isolation.webm (pass -k to keep)
+2026-03-22 17:48:04 +05:30: 📊 Progress: [download] Downloading item 4 of 299
+2026-03-22 17:48:04 +05:30: 📊 Progress: [youtube] Extracting URL: https://www.youtube.com/watch?v=zGEaasyjM5E
+[youtube] zGEaasyjM5E: Downloading webpage
+2026-03-22 17:48:04 +05:30: ⚠️  Info: WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one
+2026-03-22 17:48:04 +05:30: 📊 Progress: [youtube] DRfzittQ4Wc: Downloading android vr player API JSON
+2026-03-22 17:48:05 +05:30: 📊 Progress: [info] DRfzittQ4Wc: Downloading 1 format(s): 251
+2026-03-22 17:48:05 +05:30: ⚠️  Info: WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one
+2026-03-22 17:48:05 +05:30: 📊 Progress: [youtube] zGEaasyjM5E: Downloading android vr player API JSON
+2026-03-22 17:48:05 +05:30: 📊 Progress: [info] zGEaasyjM5E: Downloading 1 format(s): 251
+2026-03-22 17:48:05 +05:30: 📊 Progress: [download] Destination: C:\Users\neon\Downloads\Awakening on Ichika Nito Signature Guitar - Ibanez ICHI10.webm
+2026-03-22 17:48:05 +05:30: 📊 Progress: [download]   0.0% of    2.31MiB at   26.60KiB/s ETA 01:29
+2026-03-22 17:48:05 +05:30: 📊 Progress: [download]   0.1% of    2.31MiB at   78.84KiB/s ETA 00:30
+2026-03-22 17:48:05 +05:30: 📊 Progress: [download]   0.3% of    2.31MiB at  182.91KiB/s ETA 00:12
+2026-03-22 17:48:05 +05:30: 📊 Progress: [download]   0.6% of    2.31MiB at  388.13KiB/s ETA 00:06
+2026-03-22 17:48:05 +05:30: 📊 Progress: [download]   1.3% of    2.31MiB at  628.78KiB/s ETA 00:03
+2026-03-22 17:48:06 +05:30: 📊 Progress: [download]   2.7% of    2.31MiB at  636.24KiB/s ETA 00:03
+2026-03-22 17:48:06 +05:30: 📊 Progress: [download]   5.4% of    2.31MiB at  860.70KiB/s ETA 00:02
+2026-03-22 17:48:06 +05:30: 📊 Progress: [download]  10.8% of    2.31MiB at    1.27MiB/s ETA 00:01
+2026-03-22 17:48:06 +05:30: 📊 Progress: [download]  21.6% of    2.31MiB at    1.99MiB/s ETA 00:00
+2026-03-22 17:48:06 +05:30: 📊 Progress: [download]  43.2% of    2.31MiB at    3.33MiB/s ETA 00:00
+2026-03-22 17:48:06 +05:30: 📊 Progress: [download]  86.4% of    2.31MiB at    5.65MiB/s ETA 00:00
+2026-03-22 17:48:06 +05:30: 📊 Progress: [download] 100.0% of    2.31MiB at    5.88MiB/s ETA 00:00
+2026-03-22 17:48:06 +05:30: 📊 Progress: [download] 100% of    2.31MiB in 00:00:01 at 2.21MiB/s
+2026-03-22 17:48:06 +05:30: 📊 Progress: 
+2026-03-22 17:48:06 +05:30: 📊 Progress: [download] Destination: C:\Users\neon\Downloads\Ichika Nito - Orb (Official Music Video).webm
+2026-03-22 17:48:06 +05:30: 📊 Progress: [download]   0.0% of    3.73MiB at   15.61KiB/s ETA 04:04
+2026-03-22 17:48:06 +05:30: 📊 Progress: [download]   0.1% of    3.73MiB at   46.47KiB/s ETA 01:22
+2026-03-22 17:48:06 +05:30: 📊 Progress: [download]   0.2% of    3.73MiB at  108.04KiB/s ETA 00:35
+2026-03-22 17:48:06 +05:30: 📊 Progress: [download]   0.4% of    3.73MiB at  230.14KiB/s ETA 00:16
+2026-03-22 17:48:06 +05:30: 📊 Progress: [ExtractAudio] Destination: C:\Users\neon\Downloads\Awakening on Ichika Nito Signature Guitar - Ibanez ICHI10.mp3
+2026-03-22 17:48:06 +05:30: 📊 Progress: [download]   0.8% of    3.73MiB at  357.02KiB/s ETA 00:10
+2026-03-22 17:48:06 +05:30: 📊 Progress: [download]   1.6% of    3.73MiB at  434.87KiB/s ETA 00:08
+2026-03-22 17:48:06 +05:30: 📊 Progress: [download]   3.3% of    3.73MiB at  617.90KiB/s ETA 00:05
+2026-03-22 17:48:06 +05:30: 📊 Progress: [download]   6.7% of    3.73MiB at  920.80KiB/s ETA 00:03
+2026-03-22 17:48:06 +05:30: 📊 Progress: [download]  13.4% of    3.73MiB at    1.48MiB/s ETA 00:02
+2026-03-22 17:48:06 +05:30: 📊 Progress: [download]  26.8% of    3.73MiB at    2.46MiB/s ETA 00:01
+2026-03-22 17:48:06 +05:30: 📊 Progress: [download]  53.5% of    3.73MiB at    4.22MiB/s ETA 00:00
+2026-03-22 17:48:06 +05:30: 📊 Progress: [download] 100.0% of    3.73MiB at    5.75MiB/s ETA 00:00
+2026-03-22 17:48:06 +05:30: 📊 Progress: [download] 100% of    3.73MiB in 00:00:01 at 2.96MiB/s
+2026-03-22 17:48:06 +05:30: 📊 Progress: 
+2026-03-22 17:48:07 +05:30: 📊 Progress: [ExtractAudio] Destination: C:\Users\neon\Downloads\Ichika Nito - Orb (Official Music Video).mp3
+2026-03-22 17:48:07 +05:30: 📊 Progress: Deleting original file C:\Users\neon\Downloads\Awakening on Ichika Nito Signature Guitar - Ibanez ICHI10.webm (pass -k to keep)
+2026-03-22 17:48:07 +05:30: 📊 Progress: [download] Downloading item 9 of 324
+2026-03-22 17:48:07 +05:30: 📊 Progress: [youtube] Extracting URL: https://www.youtube.com/watch?v=zGEaasyjM5E
+[youtube] zGEaasyjM5E: Downloading webpage
+2026-03-22 17:48:09 +05:30: ⚠️  Info: WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one
+2026-03-22 17:48:09 +05:30: 📊 Progress: [youtube] zGEaasyjM5E: Downloading android vr player API JSON
+2026-03-22 17:48:09 +05:30: 📊 Progress: Deleting original file C:\Users\neon\Downloads\Ichika Nito - Orb (Official Music Video).webm (pass -k to keep)
+2026-03-22 17:48:09 +05:30: 📊 Progress: [download] Downloading item 5 of 299
+2026-03-22 17:48:09 +05:30: 📊 Progress: [youtube] Extracting URL: https://www.youtube.com/watch?v=5wnebm4baZQ
+[youtube] 5wnebm4baZQ: Downloading webpage
+2026-03-22 17:48:09 +05:30: 📊 Progress: [info] zGEaasyjM5E: Downloading 1 format(s): 251
+2026-03-22 17:48:09 +05:30: 📊 Progress: [download] C:\Users\neon\Downloads\Ichika Nito - Orb (Official Music Video).mp3 has already been downloaded
+2026-03-22 17:48:09 +05:30: 📊 Progress: [ExtractAudio] Not converting audio C:\Users\neon\Downloads\Ichika Nito - Orb (Official Music Video).mp3; file is already in target format mp3
+2026-03-22 17:48:09 +05:30: 📊 Progress: [download] Downloading item 10 of 324
+2026-03-22 17:48:09 +05:30: 📊 Progress: [youtube] Extracting URL: https://www.youtube.com/watch?v=EfgAd6iHApE
+[youtube] EfgAd6iHApE: Downloading webpage
+2026-03-22 17:48:10 +05:30: ⚠️  Info: WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one
+2026-03-22 17:48:10 +05:30: 📊 Progress: [youtube] 5wnebm4baZQ: Downloading android vr player API JSON
+2026-03-22 17:48:10 +05:30: 📊 Progress: [info] 5wnebm4baZQ: Downloading 1 format(s): 251
+2026-03-22 17:48:10 +05:30: ⚠️  Info: WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one
+2026-03-22 17:48:10 +05:30: 📊 Progress: [youtube] EfgAd6iHApE: Downloading android vr player API JSON
+2026-03-22 17:48:10 +05:30: 📊 Progress: [download] Destination: C:\Users\neon\Downloads\Ichika Nito - Branching Paths (Official Music Video).webm
+2026-03-22 17:48:10 +05:30: 📊 Progress: [download]   0.0% of    2.22MiB at   19.54KiB/s ETA 01:56
+2026-03-22 17:48:10 +05:30: 📊 Progress: [download]   0.1% of    2.22MiB at   58.10KiB/s ETA 00:39
+2026-03-22 17:48:10 +05:30: 📊 Progress: [download]   0.3% of    2.22MiB at  134.90KiB/s ETA 00:16
+2026-03-22 17:48:10 +05:30: 📊 Progress: [download]   0.7% of    2.22MiB at  286.93KiB/s ETA 00:07
+2026-03-22 17:48:10 +05:30: 📊 Progress: [download]   1.4% of    2.22MiB at  492.02KiB/s ETA 00:04
+2026-03-22 17:48:10 +05:30: 📊 Progress: [download]   2.8% of    2.22MiB at  551.95KiB/s ETA 00:04
+2026-03-22 17:48:10 +05:30: 📊 Progress: [download]   5.6% of    2.22MiB at  753.72KiB/s ETA 00:02
+2026-03-22 17:48:10 +05:30: 📊 Progress: [download]  11.2% of    2.22MiB at    1.15MiB/s ETA 00:01
+2026-03-22 17:48:11 +05:30: 📊 Progress: [download]  22.5% of    2.22MiB at    1.77MiB/s ETA 00:00
+2026-03-22 17:48:11 +05:30: 📊 Progress: [info] EfgAd6iHApE: Downloading 1 format(s): 251
+2026-03-22 17:48:11 +05:30: 📊 Progress: [download]  45.0% of    2.22MiB at    2.86MiB/s ETA 00:00
+2026-03-22 17:48:11 +05:30: 📊 Progress: [download]  90.1% of    2.22MiB at    4.72MiB/s ETA 00:00
+2026-03-22 17:48:11 +05:30: 📊 Progress: [download] 100.0% of    2.22MiB at    5.03MiB/s ETA 00:00
+2026-03-22 17:48:11 +05:30: 📊 Progress: [download] 100% of    2.22MiB in 00:00:00 at 2.82MiB/s
+2026-03-22 17:48:11 +05:30: 📊 Progress: 
+2026-03-22 17:48:11 +05:30: 📊 Progress: [ExtractAudio] Destination: C:\Users\neon\Downloads\Ichika Nito - Branching Paths (Official Music Video).mp3
+2026-03-22 17:48:12 +05:30: 📊 Progress: [download] Destination: C:\Users\neon\Downloads\FKJ - Ylang Ylang.webm
+2026-03-22 17:48:12 +05:30: 📊 Progress: [download]   0.0% of    3.70MiB at   15.78KiB/s ETA 04:00
+2026-03-22 17:48:12 +05:30: 📊 Progress: [download]   0.1% of    3.70MiB at   47.06KiB/s ETA 01:20
+2026-03-22 17:48:12 +05:30: 📊 Progress: [download]   0.2% of    3.70MiB at  109.41KiB/s ETA 00:34
+2026-03-22 17:48:12 +05:30: 📊 Progress: [download]   0.4% of    3.70MiB at  232.79KiB/s ETA 00:16
+2026-03-22 17:48:12 +05:30: 📊 Progress: [download]   0.8% of    3.70MiB at  353.68KiB/s ETA 00:10
+2026-03-22 17:48:12 +05:30: 📊 Progress: [download]   1.7% of    3.70MiB at  428.89KiB/s ETA 00:08
+2026-03-22 17:48:12 +05:30: 📊 Progress: [download]   3.4% of    3.70MiB at  612.86KiB/s ETA 00:05
+2026-03-22 17:48:12 +05:30: 📊 Progress: [download]   6.7% of    3.70MiB at  895.39KiB/s ETA 00:03
+2026-03-22 17:48:12 +05:30: 📊 Progress: [download]  13.5% of    3.70MiB at    1.39MiB/s ETA 00:02
+2026-03-22 17:48:12 +05:30: 📊 Progress: [download]  27.0% of    3.70MiB at    2.33MiB/s ETA 00:01
+2026-03-22 17:48:12 +05:30: 📊 Progress: [download]  54.0% of    3.70MiB at    3.92MiB/s ETA 00:00
+2026-03-22 17:48:12 +05:30: 📊 Progress: [download] 100.0% of    3.70MiB at    6.35MiB/s ETA 00:00
+2026-03-22 17:48:12 +05:30: 📊 Progress: [download] 100% of    3.70MiB in 00:00:01 at 2.45MiB/s
+2026-03-22 17:48:12 +05:30: 📊 Progress: 
+2026-03-22 17:48:12 +05:30: 📊 Progress: [ExtractAudio] Destination: C:\Users\neon\Downloads\FKJ - Ylang Ylang.mp3
+2026-03-22 17:48:12 +05:30: 📊 Progress: Deleting original file C:\Users\neon\Downloads\Ichika Nito - Branching Paths (Official Music Video).webm (pass -k to keep)
+2026-03-22 17:48:12 +05:30: 📊 Progress: [download] Downloading item 6 of 299
+2026-03-22 17:48:12 +05:30: 📊 Progress: [youtube] Extracting URL: https://www.youtube.com/watch?v=fVL9bL0nHwo
+[youtube] fVL9bL0nHwo: Downloading webpage
+2026-03-22 17:48:14 +05:30: ⚠️  Info: WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one
+2026-03-22 17:48:14 +05:30: 📊 Progress: [youtube] fVL9bL0nHwo: Downloading android vr player API JSON
+2026-03-22 17:48:14 +05:30: 📊 Progress: [info] fVL9bL0nHwo: Downloading 1 format(s): 251
+2026-03-22 17:48:15 +05:30: 📊 Progress: [download] Destination: C:\Users\neon\Downloads\Apeirophobia - Animals As Leaders (guitar cover).webm
+2026-03-22 17:48:15 +05:30: 📊 Progress: [download]   0.0% of    3.62MiB at   17.25KiB/s ETA 03:34
+2026-03-22 17:48:15 +05:30: 📊 Progress: [download]   0.1% of    3.62MiB at   51.33KiB/s ETA 01:12
+2026-03-22 17:48:15 +05:30: 📊 Progress: [download]   0.2% of    3.62MiB at  119.25KiB/s ETA 00:30
+2026-03-22 17:48:15 +05:30: 📊 Progress: [download]   0.4% of    3.62MiB at  253.92KiB/s ETA 00:14
+2026-03-22 17:48:15 +05:30: 📊 Progress: [download]   0.8% of    3.62MiB at  405.36KiB/s ETA 00:09
+2026-03-22 17:48:15 +05:30: 📊 Progress: [download]   1.7% of    3.62MiB at  509.27KiB/s ETA 00:07
+2026-03-22 17:48:15 +05:30: 📊 Progress: Deleting original file C:\Users\neon\Downloads\FKJ - Ylang Ylang.webm (pass -k to keep)
+2026-03-22 17:48:15 +05:30: 📊 Progress: [download] Downloading item 11 of 324
+2026-03-22 17:48:15 +05:30: 📊 Progress: [youtube] Extracting URL: https://www.youtube.com/watch?v=c1f2FzBu8eA
+[youtube] c1f2FzBu8eA: Downloading webpage
+2026-03-22 17:48:15 +05:30: 📊 Progress: [download]   3.4% of    3.62MiB at  690.64KiB/s ETA 00:05
+2026-03-22 17:48:15 +05:30: 📊 Progress: [download]   6.9% of    3.62MiB at 1013.05KiB/s ETA 00:03
+2026-03-22 17:48:15 +05:30: 📊 Progress: [download]  13.8% of    3.62MiB at    1.63MiB/s ETA 00:01
+2026-03-22 17:48:15 +05:30: 📊 Progress: [download]  27.6% of    3.62MiB at    2.73MiB/s ETA 00:00
+2026-03-22 17:48:15 +05:30: 📊 Progress: [download]  55.3% of    3.62MiB at    4.47MiB/s ETA 00:00
+2026-03-22 17:48:15 +05:30: 📊 Progress: [download] 100.0% of    3.62MiB at    6.54MiB/s ETA 00:00
+2026-03-22 17:48:15 +05:30: 📊 Progress: [download] 100% of    3.62MiB in 00:00:01 at 3.34MiB/s
+2026-03-22 17:48:15 +05:30: 📊 Progress: 
+2026-03-22 17:48:15 +05:30: 📊 Progress: [ExtractAudio] Destination: C:\Users\neon\Downloads\Apeirophobia - Animals As Leaders (guitar cover).mp3
+2026-03-22 17:48:16 +05:30: ⚠️  Info: WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one
+2026-03-22 17:48:16 +05:30: 📊 Progress: [youtube] c1f2FzBu8eA: Downloading android vr player API JSON
+2026-03-22 17:48:16 +05:30: 📊 Progress: [info] c1f2FzBu8eA: Downloading 1 format(s): 251
+2026-03-22 17:48:17 +05:30: 📊 Progress: [download] Destination: C:\Users\neon\Downloads\Lost in the Breeze.webm
+2026-03-22 17:48:17 +05:30: 📊 Progress: [download]   0.0% of    3.91MiB at   15.07KiB/s ETA 04:25
+2026-03-22 17:48:17 +05:30: 📊 Progress: [download]   0.1% of    3.91MiB at   44.95KiB/s ETA 01:29
+2026-03-22 17:48:17 +05:30: 📊 Progress: [download]   0.2% of    3.91MiB at  104.54KiB/s ETA 00:38
+2026-03-22 17:48:17 +05:30: 📊 Progress: [download]   0.4% of    3.91MiB at  222.60KiB/s ETA 00:17
+2026-03-22 17:48:17 +05:30: 📊 Progress: [download]   0.8% of    3.91MiB at  344.10KiB/s ETA 00:11
+2026-03-22 17:48:17 +05:30: 📊 Progress: [download]   1.6% of    3.91MiB at  414.52KiB/s ETA 00:09
+2026-03-22 17:48:17 +05:30: 📊 Progress: [download]   3.2% of    3.91MiB at  597.57KiB/s ETA 00:06
+2026-03-22 17:48:17 +05:30: 📊 Progress: [download]   6.4% of    3.91MiB at  879.01KiB/s ETA 00:04
+2026-03-22 17:48:17 +05:30: 📊 Progress: [download]  12.8% of    3.91MiB at    1.41MiB/s ETA 00:02
+2026-03-22 17:48:17 +05:30: 📊 Progress: Deleting original file C:\Users\neon\Downloads\Apeirophobia - Animals As Leaders (guitar cover).webm (pass -k to keep)
+2026-03-22 17:48:17 +05:30: 📊 Progress: [download] Downloading item 7 of 299
+2026-03-22 17:48:17 +05:30: 📊 Progress: [youtube] Extracting URL: https://www.youtube.com/watch?v=HiXoLbOSqT0
+[youtube] HiXoLbOSqT0: Downloading webpage
+2026-03-22 17:48:17 +05:30: 📊 Progress: [download]  25.6% of    3.91MiB at    2.37MiB/s ETA 00:01
+2026-03-22 17:48:17 +05:30: 📊 Progress: [download]  51.1% of    3.91MiB at    3.96MiB/s ETA 00:00
+2026-03-22 17:48:17 +05:30: 📊 Progress: [download] 100.0% of    3.91MiB at    6.21MiB/s ETA 00:00
+2026-03-22 17:48:17 +05:30: 📊 Progress: [download] 100% of    3.91MiB in 00:00:01 at 2.87MiB/s
+2026-03-22 17:48:17 +05:30: 📊 Progress: 
+2026-03-22 17:48:17 +05:30: 📊 Progress: [ExtractAudio] Destination: C:\Users\neon\Downloads\Lost in the Breeze.mp3
+2026-03-22 17:48:18 +05:30: ⚠️  Info: WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one
+2026-03-22 17:48:18 +05:30: 📊 Progress: [youtube] HiXoLbOSqT0: Downloading android vr player API JSON
+2026-03-22 17:48:18 +05:30: 📊 Progress: [info] HiXoLbOSqT0: Downloading 1 format(s): 251
+2026-03-22 17:48:19 +05:30: 📊 Progress: [download] Destination: C:\Users\neon\Downloads\Para Mexer - Animals as Leaders (guitar cover).webm
+2026-03-22 17:48:19 +05:30: 📊 Progress: [download]   0.0% of    4.02MiB at   25.40KiB/s ETA 02:42
+2026-03-22 17:48:19 +05:30: 📊 Progress: [download]   0.1% of    4.02MiB at   75.13KiB/s ETA 00:54
+2026-03-22 17:48:19 +05:30: 📊 Progress: [download]   0.2% of    4.02MiB at  174.27KiB/s ETA 00:23
+2026-03-22 17:48:19 +05:30: 📊 Progress: [download]   0.4% of    4.02MiB at  369.66KiB/s ETA 00:11
+2026-03-22 17:48:19 +05:30: 📊 Progress: [download]   0.8% of    4.02MiB at  515.73KiB/s ETA 00:07
+2026-03-22 17:48:19 +05:30: 📊 Progress: [download]   1.5% of    4.02MiB at  322.78KiB/s ETA 00:12
+2026-03-22 17:48:19 +05:30: 📊 Progress: [download]   3.1% of    4.02MiB at  497.89KiB/s ETA 00:08
+2026-03-22 17:48:19 +05:30: 📊 Progress: [download]   6.2% of    4.02MiB at  765.46KiB/s ETA 00:05
+2026-03-22 17:48:19 +05:30: 📊 Progress: [download]  12.4% of    4.02MiB at    1.23MiB/s ETA 00:02
+2026-03-22 17:48:19 +05:30: 📊 Progress: [download]  24.8% of    4.02MiB at    2.13MiB/s ETA 00:01
+2026-03-22 17:48:19 +05:30: 📊 Progress: [download]  49.7% of    4.02MiB at    3.31MiB/s ETA 00:00
+2026-03-22 17:48:19 +05:30: 📊 Progress: [download]  99.4% of    4.02MiB at    5.79MiB/s ETA 00:00
+2026-03-22 17:48:19 +05:30: 📊 Progress: [download] 100.0% of    4.02MiB at    5.56MiB/s ETA 00:00
+2026-03-22 17:48:19 +05:30: 📊 Progress: [download] 100% of    4.02MiB in 00:00:00 at 4.20MiB/s
+2026-03-22 17:48:19 +05:30: 📊 Progress: 
+2026-03-22 17:48:20 +05:30: 📊 Progress: [ExtractAudio] Destination: C:\Users\neon\Downloads\Para Mexer - Animals as Leaders (guitar cover).mp3
+2026-03-22 17:48:20 +05:30: 📊 Progress: Deleting original file C:\Users\neon\Downloads\Lost in the Breeze.webm (pass -k to keep)
+2026-03-22 17:48:20 +05:30: 📊 Progress: [download] Downloading item 12 of 324
+2026-03-22 17:48:20 +05:30: 📊 Progress: [youtube] Extracting URL: https://www.youtube.com/watch?v=DFVuYoDVS_g
+[youtube] DFVuYoDVS_g: Downloading webpage
+2026-03-22 17:48:21 +05:30: ⚠️  Info: WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one
+2026-03-22 17:48:21 +05:30: 📊 Progress: [youtube] DFVuYoDVS_g: Downloading android vr player API JSON
+2026-03-22 17:48:21 +05:30: 📊 Progress: [info] DFVuYoDVS_g: Downloading 1 format(s): 251
+2026-03-22 17:48:22 +05:30: 📊 Progress: Deleting original file C:\Users\neon\Downloads\Para Mexer - Animals as Leaders (guitar cover).webm (pass -k to keep)
+2026-03-22 17:48:22 +05:30: 📊 Progress: [download] Downloading item 8 of 299
+2026-03-22 17:48:22 +05:30: 📊 Progress: [youtube] Extracting URL: https://www.youtube.com/watch?v=w-tYngyVXLM
+[youtube] w-tYngyVXLM: Downloading webpage
+2026-03-22 17:48:22 +05:30: 📊 Progress: [download] Destination: C:\Users\neon\Downloads\Dreaming.webm
+2026-03-22 17:48:22 +05:30: 📊 Progress: [download]   0.0% of    5.73MiB at   15.57KiB/s ETA 06:16
+2026-03-22 17:48:22 +05:30: 📊 Progress: [download]   0.1% of    5.73MiB at   46.41KiB/s ETA 02:06
+2026-03-22 17:48:22 +05:30: 📊 Progress: [download]   0.1% of    5.73MiB at  107.81KiB/s ETA 00:54
+2026-03-22 17:48:22 +05:30: 📊 Progress: [download]   0.3% of    5.73MiB at  229.58KiB/s ETA 00:25
+2026-03-22 17:48:22 +05:30: 📊 Progress: [download]   0.5% of    5.73MiB at  378.88KiB/s ETA 00:15
+2026-03-22 17:48:22 +05:30: 📊 Progress: [download]   1.1% of    5.73MiB at  427.26KiB/s ETA 00:13
+2026-03-22 17:48:22 +05:30: 📊 Progress: [download]   2.2% of    5.73MiB at  592.54KiB/s ETA 00:09
+2026-03-22 17:48:22 +05:30: 📊 Progress: [download]   4.3% of    5.73MiB at  911.13KiB/s ETA 00:06
+2026-03-22 17:48:22 +05:30: 📊 Progress: [download]   8.7% of    5.73MiB at    1.43MiB/s ETA 00:03
+2026-03-22 17:48:22 +05:30: 📊 Progress: [download]  17.4% of    5.73MiB at    2.39MiB/s ETA 00:01
+2026-03-22 17:48:23 +05:30: 📊 Progress: [download]  34.9% of    5.73MiB at    4.06MiB/s ETA 00:00
+2026-03-22 17:48:23 +05:30: 📊 Progress: [download]  69.7% of    5.73MiB at    5.95MiB/s ETA 00:00
+2026-03-22 17:48:23 +05:30: ⚠️  Info: WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one
+2026-03-22 17:48:23 +05:30: 📊 Progress: [youtube] w-tYngyVXLM: Downloading android vr player API JSON
+2026-03-22 17:48:23 +05:30: 📊 Progress: [download] 100.0% of    5.73MiB at    4.75MiB/s ETA 00:00
+2026-03-22 17:48:23 +05:30: 📊 Progress: [download] 100% of    5.73MiB in 00:00:01 at 2.89MiB/s
+2026-03-22 17:48:23 +05:30: 📊 Progress: 
+2026-03-22 17:48:23 +05:30: 📊 Progress: [ExtractAudio] Destination: C:\Users\neon\Downloads\Dreaming.mp3
+2026-03-22 17:48:24 +05:30: 📊 Progress: [info] w-tYngyVXLM: Downloading 1 format(s): 251
+2026-03-22 17:48:24 +05:30: 📊 Progress: [download] Destination: C:\Users\neon\Downloads\INSANE cover of Sparkle - (Your Name OST)  - Fingerstyle Guitar Cover by Edward Ong.webm
+2026-03-22 17:48:24 +05:30: 📊 Progress: [download]   0.0% of    6.46MiB at   17.36KiB/s ETA 06:21
+2026-03-22 17:48:24 +05:30: 📊 Progress: [download]   0.0% of    6.46MiB at   51.66KiB/s ETA 02:07
+2026-03-22 17:48:24 +05:30: 📊 Progress: [download]   0.1% of    6.46MiB at  120.05KiB/s ETA 00:55
+2026-03-22 17:48:24 +05:30: 📊 Progress: [download]   0.2% of    6.46MiB at  255.39KiB/s ETA 00:25
+2026-03-22 17:48:24 +05:30: 📊 Progress: [download]   0.5% of    6.46MiB at  381.85KiB/s ETA 00:17
+2026-03-22 17:48:25 +05:30: 📊 Progress: [download]   1.0% of    6.46MiB at  488.28KiB/s ETA 00:13
+2026-03-22 17:48:25 +05:30: 📊 Progress: [download]   1.9% of    6.46MiB at  680.75KiB/s ETA 00:09
+2026-03-22 17:48:25 +05:30: 📊 Progress: [download]   3.9% of    6.46MiB at    1.02MiB/s ETA 00:06
+2026-03-22 17:48:25 +05:30: 📊 Progress: [download]   7.7% of    6.46MiB at    1.59MiB/s ETA 00:03
+2026-03-22 17:48:25 +05:30: 📊 Progress: [download]  15.5% of    6.46MiB at    2.68MiB/s ETA 00:02
+2026-03-22 17:48:25 +05:30: 📊 Progress: [download]  30.9% of    6.46MiB at    4.59MiB/s ETA 00:00
+2026-03-22 17:48:25 +05:30: 📊 Progress: [download]  61.9% of    6.46MiB at    6.12MiB/s ETA 00:00
+2026-03-22 17:48:26 +05:30: 📊 Progress: [download] 100.0% of    6.46MiB at    4.72MiB/s ETA 00:00
+2026-03-22 17:48:26 +05:30: 📊 Progress: [download] 100% of    6.46MiB in 00:00:02 at 3.08MiB/s
+2026-03-22 17:48:26 +05:30: 📊 Progress: 
+2026-03-22 17:48:26 +05:30: 📊 Progress: [ExtractAudio] Destination: C:\Users\neon\Downloads\INSANE cover of Sparkle - (Your Name OST)  - Fingerstyle Guitar Cover by Edward Ong.mp3
+2026-03-22 17:48:27 +05:30: 📊 Progress: Deleting original file C:\Users\neon\Downloads\Dreaming.webm (pass -k to keep)
+2026-03-22 17:48:27 +05:30: 📊 Progress: [download] Downloading item 13 of 324
+2026-03-22 17:48:27 +05:30: 📊 Progress: [youtube] Extracting URL: https://www.youtube.com/watch?v=7CI7Lc96yDA
+2026-03-22 17:48:27 +05:30: 📊 Progress: [youtube] 7CI7Lc96yDA: Downloading webpage
+2026-03-22 17:48:28 +05:30: ⚠️  Info: WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one
+2026-03-22 17:48:28 +05:30: 📊 Progress: [youtube] 7CI7Lc96yDA: Downloading android vr player API JSON
+2026-03-22 17:48:29 +05:30: 📊 Progress: [info] 7CI7Lc96yDA: Downloading 1 format(s): 251
+2026-03-22 17:48:29 +05:30: 📊 Progress: [download] Destination: C:\Users\neon\Downloads\Ichika Nito - Picturesque (Official Music Video).webm
+2026-03-22 17:48:29 +05:30: 📊 Progress: [download]   0.0% of    3.29MiB at   58.83KiB/s ETA 00:57
+2026-03-22 17:48:29 +05:30: 📊 Progress: [download]   0.1% of    3.29MiB at  171.04KiB/s ETA 00:19
+2026-03-22 17:48:29 +05:30: 📊 Progress: [download]   0.2% of    3.29MiB at  394.15KiB/s ETA 00:08
+2026-03-22 17:48:29 +05:30: 📊 Progress: [download]   0.4% of    3.29MiB at  826.30KiB/s ETA 00:04
+2026-03-22 17:48:29 +05:30: 📊 Progress: [download]   0.9% of    3.29MiB at  512.70KiB/s ETA 00:06
+2026-03-22 17:48:29 +05:30: 📊 Progress: [download]   1.9% of    3.29MiB at  568.54KiB/s ETA 00:05
+2026-03-22 17:48:29 +05:30: 📊 Progress: [download]   3.8% of    3.29MiB at  800.13KiB/s ETA 00:04
+2026-03-22 17:48:29 +05:30: 📊 Progress: [download]   7.6% of    3.29MiB at    1.20MiB/s ETA 00:02
+2026-03-22 17:48:29 +05:30: 📊 Progress: [download]  15.2% of    3.29MiB at    1.86MiB/s ETA 00:01
+2026-03-22 17:48:29 +05:30: 📊 Progress: [download]  30.4% of    3.29MiB at    3.15MiB/s ETA 00:00
+2026-03-22 17:48:29 +05:30: 📊 Progress: [download]  60.8% of    3.29MiB at    5.19MiB/s ETA 00:00
+2026-03-22 17:48:29 +05:30: 📊 Progress: [download] 100.0% of    3.29MiB at    6.60MiB/s ETA 00:00
+2026-03-22 17:48:29 +05:30: 📊 Progress: [download] 100% of    3.29MiB in 00:00:00 at 3.74MiB/s
+2026-03-22 17:48:29 +05:30: 📊 Progress: 
+2026-03-22 17:48:30 +05:30: 📊 Progress: [ExtractAudio] Destination: C:\Users\neon\Downloads\Ichika Nito - Picturesque (Official Music Video).mp3
+2026-03-22 17:48:30 +05:30: 📊 Progress: Deleting original file C:\Users\neon\Downloads\INSANE cover of Sparkle - (Your Name OST)  - Fingerstyle Guitar Cover by Edward Ong.webm (pass -k to keep)
+2026-03-22 17:48:30 +05:30: 📊 Progress: [download] Downloading item 9 of 299
+2026-03-22 17:48:30 +05:30: 📊 Progress: [youtube] Extracting URL: https://www.youtube.com/watch?v=QVwhK0t6Mdg
+[youtube] QVwhK0t6Mdg: Downloading webpage
+2026-03-22 17:48:32 +05:30: 📊 Progress: Deleting original file C:\Users\neon\Downloads\Ichika Nito - Picturesque (Official Music Video).webm (pass -k to keep)
+2026-03-22 17:48:32 +05:30: 📊 Progress: [download] Downloading item 14 of 324
+2026-03-22 17:48:32 +05:30: 📊 Progress: [youtube] Extracting URL: https://www.youtube.com/watch?v=tlBdk-mK63s
+[youtube] tlBdk-mK63s: Downloading webpage
+2026-03-22 17:48:32 +05:30: ⚠️  Info: WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one
+2026-03-22 17:48:32 +05:30: 📊 Progress: [youtube] QVwhK0t6Mdg: Downloading android vr player API JSON
+2026-03-22 17:48:32 +05:30: 📊 Progress: [info] QVwhK0t6Mdg: Downloading 1 format(s): 251
+2026-03-22 17:48:33 +05:30: ⚠️  Info: WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one
+2026-03-22 17:48:33 +05:30: 📊 Progress: [youtube] tlBdk-mK63s: Downloading android vr player API JSON
+2026-03-22 17:48:33 +05:30: 📊 Progress: [info] tlBdk-mK63s: Downloading 1 format(s): 251
+2026-03-22 17:48:33 +05:30: 📊 Progress: [download] Destination: C:\Users\neon\Downloads\This Sleep Token cover almost BROKE me....webm
+2026-03-22 17:48:33 +05:30: 📊 Progress: [download]   0.0% of    4.97MiB at   17.47KiB/s ETA 04:51
+2026-03-22 17:48:33 +05:30: 📊 Progress: [download]   0.1% of    4.97MiB at   51.93KiB/s ETA 01:38
+2026-03-22 17:48:33 +05:30: 📊 Progress: [download]   0.1% of    4.97MiB at  120.59KiB/s ETA 00:42
+2026-03-22 17:48:33 +05:30: 📊 Progress: [download]   0.3% of    4.97MiB at  256.59KiB/s ETA 00:19
+2026-03-22 17:48:33 +05:30: 📊 Progress: [download]   0.6% of    4.97MiB at  383.73KiB/s ETA 00:13
+2026-03-22 17:48:33 +05:30: 📊 Progress: [download]   1.2% of    4.97MiB at  435.92KiB/s ETA 00:11
+2026-03-22 17:48:33 +05:30: 📊 Progress: [download]   2.5% of    4.97MiB at  602.38KiB/s ETA 00:08
+2026-03-22 17:48:33 +05:30: 📊 Progress: [download]   5.0% of    4.97MiB at  933.00KiB/s ETA 00:05
+2026-03-22 17:48:33 +05:30: 📊 Progress: [download] Destination: C:\Users\neon\Downloads\Shadow Magic.webm
+2026-03-22 17:48:33 +05:30: 📊 Progress: [download]   0.0% of    2.02MiB at   21.14KiB/s ETA 01:37
+2026-03-22 17:48:33 +05:30: 📊 Progress: [download]   0.1% of    2.02MiB at   62.86KiB/s ETA 00:32
+2026-03-22 17:48:33 +05:30: 📊 Progress: [download]   0.3% of    2.02MiB at  145.93KiB/s ETA 00:14
+2026-03-22 17:48:33 +05:30: 📊 Progress: [download]   0.7% of    2.02MiB at  310.22KiB/s ETA 00:06
+2026-03-22 17:48:33 +05:30: 📊 Progress: [download]  10.0% of    4.97MiB at    1.45MiB/s ETA 00:03
+2026-03-22 17:48:33 +05:30: 📊 Progress: [download]   1.5% of    2.02MiB at  511.66KiB/s ETA 00:03
+2026-03-22 17:48:34 +05:30: 📊 Progress: [download]   3.1% of    2.02MiB at  613.71KiB/s ETA 00:03
+2026-03-22 17:48:34 +05:30: 📊 Progress: [download]  20.1% of    4.97MiB at    2.44MiB/s ETA 00:01
+2026-03-22 17:48:34 +05:30: 📊 Progress: [download]   6.1% of    2.02MiB at  856.69KiB/s ETA 00:02
+2026-03-22 17:48:34 +05:30: 📊 Progress: [download]  40.2% of    4.97MiB at    4.13MiB/s ETA 00:00
+2026-03-22 17:48:34 +05:30: 📊 Progress: [download]  12.3% of    2.02MiB at    1.16MiB/s ETA 00:01
+2026-03-22 17:48:34 +05:30: 📊 Progress: [download]  24.7% of    2.02MiB at    1.75MiB/s ETA 00:00
+2026-03-22 17:48:34 +05:30: 📊 Progress: [download]  80.4% of    4.97MiB at    4.94MiB/s ETA 00:00
+2026-03-22 17:48:34 +05:30: 📊 Progress: [download] 100.0% of    4.97MiB at    4.52MiB/s ETA 00:00
+2026-03-22 17:48:34 +05:30: 📊 Progress: [download] 100% of    4.97MiB in 00:00:01 at 2.55MiB/s
+2026-03-22 17:48:34 +05:30: 📊 Progress: 
+2026-03-22 17:48:34 +05:30: 📊 Progress: [ExtractAudio] Destination: C:\Users\neon\Downloads\This Sleep Token cover almost BROKE me....mp3
+2026-03-22 17:48:34 +05:30: 📊 Progress: [download]  49.5% of    2.02MiB at    1.09MiB/s ETA 00:00
+2026-03-22 18:04:44 +05:30: 📁 Download directory: C:\Users\neon\Downloads
+2026-03-22 18:04:44 +05:30: 
+
+2026-03-22 18:04:44 +05:30: ╔════════════════════════════════════════╗
+2026-03-22 18:04:44 +05:30: ║      🎬 MediaFlow Server Started 🎬      ║
+2026-03-22 18:04:44 +05:30: ╚════════════════════════════════════════╝
+2026-03-22 18:04:44 +05:30: 
+✅ Server running on: http://localhost:7860
+2026-03-22 18:04:44 +05:30: 📁 Files will be saved to: C:\Users\neon\Downloads
+2026-03-22 18:04:44 +05:30: 
+💡 Available endpoints:
+2026-03-22 18:04:44 +05:30:    GET  http://localhost:7860/api/ping      - Check if server is running
+2026-03-22 18:04:44 +05:30:    GET  http://localhost:7860/api/test      - Test yt-dlp & ffmpeg
+2026-03-22 18:04:44 +05:30:    POST http://localhost:7860/api/download  - Download media
+2026-03-22 18:04:44 +05:30: 
+💡 Keep this window open while using the extension.
+
+2026-03-22 18:04:46 +05:30: ✅ yt-dlp: 2026.03.03
+2026-03-22 18:05:14 +05:30: ⬇️  Starting audio download from: https://www.youtube.com/watch?v=vNsoHV8YtE4&list=RDvNsoHV8YtE4&start_radio=1
+2026-03-22 18:05:14 +05:30: 🔧 Command: yt-dlp --no-playlist -f bestaudio --extract-audio --audio-format mp3 --audio-quality 192K -o "C:\Users\neon\Downloads\%(title)s.%(ext)s" "[URL]"
+2026-03-22 18:05:15 +05:30: 📊 Progress: [youtube:tab] Extracting URL: https://www.youtube.com/watch?v=vNsoHV8YtE4&list=RDvNsoHV8YtE4&start_radio=1
+2026-03-22 18:05:15 +05:30: 📊 Progress: [youtube:tab] Downloading just the video vNsoHV8YtE4 because of --no-playlist
+2026-03-22 18:05:15 +05:30: 📊 Progress: [youtube] Extracting URL: https://www.youtube.com/watch?v=vNsoHV8YtE4
+2026-03-22 18:05:15 +05:30: 📊 Progress: [youtube] vNsoHV8YtE4: Downloading webpage
+2026-03-22 18:05:16 +05:30: ⚠️  Info: WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one
+2026-03-22 18:05:16 +05:30: 📊 Progress: [youtube] vNsoHV8YtE4: Downloading android vr player API JSON
+2026-03-22 18:05:17 +05:30: 📊 Progress: [info] vNsoHV8YtE4: Downloading 1 format(s): 251
+2026-03-22 18:05:17 +05:30: 📊 Progress: [download] Destination: C:\Users\neon\Downloads\ feat. shully [Lyrics Romaji] (Miracle Sugite Yabai).webm
+2026-03-22 18:05:17 +05:30: 📊 Progress: [download]   0.0% of    3.95MiB at   19.31KiB/s ETA 03:29
+2026-03-22 18:05:17 +05:30: 📊 Progress: [download]   0.1% of    3.95MiB at   57.03KiB/s ETA 01:10
+2026-03-22 18:05:17 +05:30: 📊 Progress: [download]   0.2% of    3.95MiB at  132.27KiB/s ETA 00:30
+2026-03-22 18:05:17 +05:30: 📊 Progress: [download]   0.4% of    3.95MiB at  280.70KiB/s ETA 00:14
+2026-03-22 18:05:17 +05:30: 📊 Progress: [download]   0.8% of    3.95MiB at  477.88KiB/s ETA 00:08
+2026-03-22 18:05:17 +05:30: 📊 Progress: [download]   1.6% of    3.95MiB at  547.92KiB/s ETA 00:07
+2026-03-22 18:05:17 +05:30: 📊 Progress: [download]   3.1% of    3.95MiB at  725.59KiB/s ETA 00:05
+2026-03-22 18:05:17 +05:30: 📊 Progress: [download]   6.3% of    3.95MiB at    1.03MiB/s ETA 00:03
+2026-03-22 18:05:18 +05:30: 📊 Progress: [download]  12.6% of    3.95MiB at    1.65MiB/s ETA 00:02
+2026-03-22 18:05:18 +05:30: 📊 Progress: [download]  25.3% of    3.95MiB at    2.81MiB/s ETA 00:01
+2026-03-22 18:05:18 +05:30: 📊 Progress: [download]  50.7% of    3.95MiB at    3.83MiB/s ETA 00:00
+2026-03-22 18:05:18 +05:30: 📊 Progress: [download] 100.0% of    3.95MiB at    4.31MiB/s ETA 00:00
+2026-03-22 18:05:18 +05:30: 📊 Progress: [download] 100% of    3.95MiB in 00:00:01 at 2.66MiB/s
+2026-03-22 18:05:18 +05:30: 📊 Progress: 
+2026-03-22 18:05:19 +05:30: 📊 Progress: [ExtractAudio] Destination: C:\Users\neon\Downloads\ feat. shully [Lyrics Romaji] (Miracle Sugite Yabai).mp3
+2026-03-22 18:05:21 +05:30: 📊 Progress: Deleting original file C:\Users\neon\Downloads\ feat. shully [Lyrics Romaji] (Miracle Sugite Yabai).webm (pass -k to keep)
+2026-03-22 18:05:21 +05:30: ✅ Download completed
+2026-03-22 18:05:21 +05:30: 📝 Output: [youtube:tab] Extracting URL: https://www.youtube.com/watch?v=vNsoHV8YtE4&list=RDvNsoHV8YtE4&start_radio=1
+[youtube:tab] Downloading just the video vNsoHV8YtE4 because of --no-playlist
+[youtube] Extracting URL: https://www.youtube.com/watch?v=vNsoHV8YtE4
+[youtube] vNsoHV8YtE4: Downloading webpage
+[youtube] vNsoHV8YtE4: Downloading android vr player API JSON
+[info] vNsoHV8YtE4: Downloading 1 format(s): 251
+[download] Destination: C:\Users\neon\Downloads\ feat. shully [Lyrics Romaji] (Miracle Sugite Yabai).webm
+[download]   0.0% of    3.95MiB at   19.31KiB/s ETA 03:29[download]   0.1% of    3.95MiB at   57.03KiB/s ETA 01:10[download]   0.2% of    3.95MiB at  132.27KiB/s ETA 00:30[download]   0.4% of    3.95MiB at  280.70KiB/s ETA 00:14[download]   0.8% of    3.95MiB at  477.88KiB/s ETA 00:08[download]   1.6% of    3.95MiB at  547.92KiB/s ETA 00:07[download]   3.1% of    3.95MiB at  725.59KiB/s ETA 00:05[download]   6.3% of    3.95MiB at    1.03MiB/s ETA 00:03[download]  12.6% of    3.95MiB at    1.65MiB/s ETA 00:02[download]  25.3% of    3.95MiB at    2.81MiB/s ETA 00:01[download]  50.7% of    3.95MiB at    3.83MiB/s ETA 00:00[download] 100.0% of    3.95MiB at    4.31MiB/s ETA 00:00[download] 100% of    3.95MiB in 00:00:01 at 2.66MiB/s   
+[ExtractAudio] Destination: C:\Users\neon\Downloads\ feat. shully [Lyrics Romaji] (Miracle Sugite Yabai).mp3
+Deleting original file C:\Users\neon\Downloads\ feat. shully [Lyrics Romaji] (Miracle Sugite Yabai).webm (pass -k to keep)
+
+2026-03-22 18:16:13 +05:30: 📁 Download directory: C:\Users\neon\Downloads
+2026-03-22 18:16:13 +05:30: 
+
+2026-03-22 18:16:13 +05:30: ╔════════════════════════════════════════╗
+2026-03-22 18:16:13 +05:30: ║      🎬 MediaFlow Server Started 🎬      ║
+2026-03-22 18:16:13 +05:30: ╚════════════════════════════════════════╝
+2026-03-22 18:16:13 +05:30: 
+✅ Server running on: http://localhost:7860
+2026-03-22 18:16:13 +05:30: ✅ WebSocket: ws://localhost:7860
+2026-03-22 18:16:13 +05:30: 📁 Files will be saved to: C:\Users\neon\Downloads
+2026-03-22 18:16:13 +05:30: 
+💡 Available endpoints:
+2026-03-22 18:16:13 +05:30:    GET  http://localhost:7860/api/ping      - Check if server is running
+2026-03-22 18:16:13 +05:30:    GET  http://localhost:7860/api/test      - Test yt-dlp & ffmpeg
+2026-03-22 18:16:13 +05:30:    POST http://localhost:7860/api/download  - Download media
+2026-03-22 18:16:13 +05:30: 
+💡 Keep this window open while using the extension.
+
+2026-03-22 18:16:14 +05:30: ✅ yt-dlp: 2026.03.03
+2026-03-22 18:27:22 +05:30: 
+⬇️  Starting video download from: https://www.youtube.com/watch?v=MwpMEbgC7DA
+2026-03-22 18:27:22 +05:30: 🔧 Command: yt-dlp --no-playlist -f "best[ext=mp4]" -o "C:\Users\neon\Downloads\%(title)s.%(ext)s" "[URL]"
+2026-03-22 18:27:23 +05:30: 📊 Progress: [youtube] Extracting URL: https://www.youtube.com/watch?v=MwpMEbgC7DA
+2026-03-22 18:27:23 +05:30: 📊 Progress: [youtube] MwpMEbgC7DA: Downloading webpage
+2026-03-22 18:27:24 +05:30: ⚠️  Info: WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one
+2026-03-22 18:27:24 +05:30: 📊 Progress: [youtube] MwpMEbgC7DA: Downloading android vr player API JSON
+2026-03-22 18:27:25 +05:30: 📊 Progress: [info] MwpMEbgC7DA: Downloading 1 format(s): 18
+2026-03-22 18:27:25 +05:30: 📊 Progress: [download] Destination: C:\Users\neon\Downloads\Tom Odell - Another Love (Official Video).mp4
+2026-03-22 18:27:25 +05:30: 📊 Progress: [download]   0.0% of    6.92MiB at  Unknown B/s ETA Unknown
+2026-03-22 18:27:25 +05:30: 📊 Progress: [download]   0.0% of    6.92MiB at  660.45KiB/s ETA 00:10
+2026-03-22 18:27:26 +05:30: 📊 Progress: [download]   0.1% of    6.92MiB at  111.85KiB/s ETA 01:03
+2026-03-22 18:27:26 +05:30: 📊 Progress: [download]   0.2% of    6.92MiB at  236.64KiB/s ETA 00:29
+2026-03-22 18:27:26 +05:30: 📊 Progress: [download]   0.4% of    6.92MiB at  383.83KiB/s ETA 00:18
+2026-03-22 18:27:26 +05:30: 📊 Progress: [download]   0.9% of    6.92MiB at  446.47KiB/s ETA 00:15
+2026-03-22 18:27:26 +05:30: 📊 Progress: [download]   1.8% of    6.92MiB at  644.54KiB/s ETA 00:10
+2026-03-22 18:27:26 +05:30: 📊 Progress: [download]   3.6% of    6.92MiB at  968.92KiB/s ETA 00:07
+2026-03-22 18:27:26 +05:30: 📊 Progress: [download]   7.2% of    6.92MiB at    1.51MiB/s ETA 00:04
+2026-03-22 18:27:26 +05:30: 📊 Progress: [download]  14.4% of    6.92MiB at    2.52MiB/s ETA 00:02
+2026-03-22 18:27:26 +05:30: 📊 Progress: [download]  28.9% of    6.92MiB at    4.29MiB/s ETA 00:01
+2026-03-22 18:27:26 +05:30: 📊 Progress: [download]  57.8% of    6.92MiB at    5.22MiB/s ETA 00:00
+2026-03-22 18:27:27 +05:30: 📊 Progress: [download] 100.0% of    6.92MiB at    4.34MiB/s ETA 00:00
+2026-03-22 18:27:27 +05:30: 📊 Progress: [download] 100% of    6.92MiB in 00:00:02 at 2.91MiB/s
+2026-03-22 18:27:27 +05:30: 📊 Progress: 
+2026-03-22 18:27:27 +05:30: ✅ Download completed!
+2026-03-22 18:27:27 +05:30: 📊 Output: [youtube] Extracting URL: https://www.youtube.com/watch?v=MwpMEbgC7DA
+[youtube] MwpMEbgC7DA: Downloading webpage
+[youtube] MwpMEbgC7DA: Downloading android vr player API JSON
+[info] MwpMEbgC7DA: Downloading 1 format(s): 18
+[download] Destination: C:\Users\neon\Downloads\Tom Odell - Another Love (Official Video).mp4
+[download]   0.0% of    6.92MiB at  Unknown B/s ETA Unknown[download]   0.0% of    6.92MiB at  660.45KiB/s ETA 00:10  [download]   0.1% of    6.92MiB at  111.85KiB/s ETA 01:03[download]   0.2% of    6.92MiB at  236.64KiB/s ETA 00:29[download]   0.4% of    6.92MiB at  383.83KiB/s ETA 00:18[download]   0.9% of    6.92MiB at  446.47KiB/s ETA 00:15[download]   1.8% of    6.92MiB at  644.54KiB/s ETA 00:10[download]   3.6% of    6.92MiB at  968.92KiB/s ETA 00:07[download]   7.2% of    6.92MiB at    1.51MiB/s ETA 00:04[download]  14.4% of    6.92MiB at    2.52MiB/s ETA 00:02[download]  28.9% of    6.92MiB at    4.29MiB/s ETA 00:01[download]  57.8% of    6.92MiB at    5.22MiB/s ETA 00:00[download] 100.0% of    6.92MiB at    4.34MiB/s ETA 00:00[download] 100% of    6.92MiB in 00:00:02 at 2.91MiB/s   
+
+2026-03-22 18:27:29 +05:30: ✅ Client connected via Socket.IO: 8DmRPbWfvQXsW-TlAAAB
+2026-03-22 18:27:41 +05:30: ❌ Client disconnected: 8DmRPbWfvQXsW-TlAAAB
+2026-03-22 18:27:41 +05:30: ✅ Client connected via Socket.IO: EM_HBJYCUcVvcs-bAAAD
+2026-03-22 18:28:08 +05:30: ❌ Client disconnected: EM_HBJYCUcVvcs-bAAAD
+2026-03-22 18:28:08 +05:30: ✅ Client connected via Socket.IO: SuwSrLznvrVJd-R5AAAF
+2026-03-22 18:28:10 +05:30: ❌ Client disconnected: SuwSrLznvrVJd-R5AAAF
+2026-03-22 18:28:10 +05:30: ✅ Client connected via Socket.IO: iVq_dQP5OB9hI3F8AAAH
+2026-03-22 18:28:47 +05:30: 
+⬇️  Starting video download from: https://www.youtube.com/shorts/HKUEGYFm0Z0
+2026-03-22 18:28:47 +05:30: 🔧 Command: yt-dlp --no-playlist -f "best[ext=mp4]" -o "C:\Users\neon\Downloads\%(title)s.%(ext)s" "[URL]"
+2026-03-22 18:28:48 +05:30: 📊 Progress: [youtube] Extracting URL: https://www.youtube.com/shorts/HKUEGYFm0Z0
+2026-03-22 18:28:48 +05:30: 📊 Progress: [youtube] HKUEGYFm0Z0: Downloading webpage
+2026-03-22 18:28:49 +05:30: ⚠️  Info: WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one
+2026-03-22 18:28:49 +05:30: 📊 Progress: [youtube] HKUEGYFm0Z0: Downloading android vr player API JSON
+2026-03-22 18:28:49 +05:30: 📊 Progress: [info] HKUEGYFm0Z0: Downloading 1 format(s): 18
+2026-03-22 18:28:50 +05:30: 📊 Progress: [download] Destination: C:\Users\neon\Downloads\She Is Being Cooked  Deepak Vohara Sir  Upsc Interview.mp4
+2026-03-22 18:28:50 +05:30: 📊 Progress: [download]   0.0% of   10.42MiB at   18.55KiB/s ETA 09:35
+2026-03-22 18:28:50 +05:30: 📊 Progress: [download]   0.0% of   10.42MiB at   55.14KiB/s ETA 03:13
+2026-03-22 18:28:50 +05:30: 📊 Progress: [download]   0.1% of   10.42MiB at  128.04KiB/s ETA 01:23
+2026-03-22 18:28:50 +05:30: 📊 Progress: [download]   0.1% of   10.42MiB at  272.34KiB/s ETA 00:39
+2026-03-22 18:28:50 +05:30: 📊 Progress: [download]   0.3% of   10.42MiB at  477.41KiB/s ETA 00:22
+2026-03-22 18:28:50 +05:30: 📊 Progress: [download]   0.6% of   10.42MiB at  556.43KiB/s ETA 00:19
+2026-03-22 18:28:50 +05:30: 📊 Progress: [download]   1.2% of   10.42MiB at  819.14KiB/s ETA 00:12
+2026-03-22 18:28:50 +05:30: 📊 Progress: [download]   2.4% of   10.42MiB at    1.22MiB/s ETA 00:08
+2026-03-22 18:28:50 +05:30: 📊 Progress: [download]   4.8% of   10.42MiB at    1.78MiB/s ETA 00:05
+2026-03-22 18:28:50 +05:30: 📊 Progress: [download]   9.6% of   10.42MiB at    2.93MiB/s ETA 00:03
+2026-03-22 18:28:50 +05:30: 📊 Progress: [download]  19.2% of   10.42MiB at    4.71MiB/s ETA 00:01
+2026-03-22 18:28:50 +05:30: 📊 Progress: [download]  38.4% of   10.42MiB at    6.55MiB/s ETA 00:00
+2026-03-22 18:28:51 +05:30: 📊 Progress: [download]  76.8% of   10.42MiB at    4.24MiB/s ETA 00:00
+2026-03-22 18:28:52 +05:30: 📊 Progress: [download]  94.5% of   10.42MiB at    3.87MiB/s ETA 00:00
+2026-03-22 18:28:52 +05:30: 📊 Progress: [download]  94.5% of   10.42MiB at   20.20KiB/s ETA 00:29
+2026-03-22 18:28:52 +05:30: 📊 Progress: [download]  94.5% of   10.42MiB at   59.88KiB/s ETA 00:09
+2026-03-22 18:28:52 +05:30: 📊 Progress: [download]  94.5% of   10.42MiB at  139.07KiB/s ETA 00:04
+2026-03-22 18:28:52 +05:30: 📊 Progress: [download]  94.6% of   10.42MiB at  295.75KiB/s ETA 00:01
+2026-03-22 18:28:52 +05:30: 📊 Progress: [download]  94.8% of   10.42MiB at  526.21KiB/s ETA 00:01
+2026-03-22 18:28:52 +05:30: 📊 Progress: [download]  95.1% of   10.42MiB at  548.17KiB/s ETA 00:00
+2026-03-22 18:28:52 +05:30: 📊 Progress: [download]  95.7% of   10.42MiB at  778.82KiB/s ETA 00:00
+2026-03-22 18:28:52 +05:30: 📊 Progress: [download]  96.9% of   10.42MiB at    1.11MiB/s ETA 00:00
+2026-03-22 18:28:53 +05:30: 📊 Progress: [download]  99.3% of   10.42MiB at    1.80MiB/s ETA 00:00
+2026-03-22 18:28:53 +05:30: 📊 Progress: [download] 100.0% of   10.42MiB at    1.94MiB/s ETA 00:00
+2026-03-22 18:28:53 +05:30: 📊 Progress: [download] 100% of   10.42MiB in 00:00:03 at 3.19MiB/s
+2026-03-22 18:28:53 +05:30: 📊 Progress: 
+2026-03-22 18:28:53 +05:30: ✅ Download completed!
+2026-03-22 18:28:53 +05:30: 📊 Output: [youtube] Extracting URL: https://www.youtube.com/shorts/HKUEGYFm0Z0
+[youtube] HKUEGYFm0Z0: Downloading webpage
+[youtube] HKUEGYFm0Z0: Downloading android vr player API JSON
+[info] HKUEGYFm0Z0: Downloading 1 format(s): 18
+[download] Destination: C:\Users\neon\Downloads\She Is Being Cooked  Deepak Vohara Sir  Upsc Interview.mp4
+[download]   0.0% of   10.42MiB at   18.55KiB/s ETA 09:35[download]   0.0% of   10.42MiB at   55.14KiB/s ETA 03:13[download]   0.1% of   10.42MiB at  128.04KiB/s ETA 01:23[download]   0.1% of   10.42MiB at  272.34KiB/s ETA 00:39[download]   0.3% of   10.42MiB at  477.41KiB/s ETA 00:22[download]   0.6% of   10.42MiB at  556.43KiB/s ETA 00:19[download]   1.2% of   10.42MiB at  819.14KiB/s ETA 00:12[download]   2.4% of   10.42MiB at    1.22MiB/s ETA 00:08[download]   4.8% of   10.42MiB at    1.78MiB/s ETA 00:05[download]   9.6% of   10.42MiB at    2.93MiB/s ETA 00:03[download]  19.2% of   10.42MiB at    4.71MiB/s ETA 00:01[download]  38.4% of   10.42MiB at    6.55MiB/s ETA 00:00[download]  76.8% of   10.42MiB at    4.24MiB/s ETA 00:00[download]  94.5% of   10.42MiB at    3.87MiB/s ETA 00:00[download]  94.5% of   10.42MiB at   20.20KiB/s ETA 00:29[download]  94.5% of   10.42MiB at   59.88KiB/s ETA 00:09[download]  94.5% of   10.42MiB at  139.07KiB/s ETA 00:04[download]  94.6% of   10.42MiB at  295.75KiB/s ETA 00:01[download]  94.8% of   10.42MiB at  526.21KiB/s ETA 00:01[download]  95.1% of   10.42MiB at  548.17KiB/s ETA 00:00[download]  95.7% of   10.42MiB at  778.82KiB/s ETA 00:00[download]  96.9% of   10.42MiB at    1.11MiB/s ETA 00:00[download]  99.3% of   10.42MiB at    1.80MiB/s ETA 00:00[download] 100.0% of   10.42MiB at    1.94MiB/s ETA 00:00[download] 100% of   10.42MiB in 00:00:03 at 3.19MiB/s   
+

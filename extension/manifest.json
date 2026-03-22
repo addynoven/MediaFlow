@@ -1,0 +1,21 @@
+{
+	"manifest_version": 3,
+	"name": "MediaFlow - Video & Audio Downloader",
+	"version": "1.0.0",
+	"description": "Download videos, audio, and images with a single click. Powered by yt-dlp.",
+	"permissions": ["activeTab", "contextMenus", "scripting", "storage"],
+	"host_permissions": ["<all_urls>"],
+	"action": {
+		"default_popup": "popup.html",
+		"default_title": "MediaFlow - Download Media"
+	},
+	"background": {
+		"service_worker": "background.js"
+	},
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["content.js", "hover-buttons.js"]
+		}
+	]
+}

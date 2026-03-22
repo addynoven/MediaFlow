@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>MediaFlow Download Manager</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			body {
+				font-family:
+					-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+				background: linear-gradient(135deg, #0f1419 0%, #1a1f2e 100%);
+				color: #e0e0e0;
+				padding: 20px;
+				min-height: 100vh;
+			}
+
+			.container {
+				max-width: 1000px;
+				margin: 0 auto;
+			}
+
+			.header {
+				text-align: center;
+				margin-bottom: 40px;
+			}
+
+			.header h1 {
+				font-size: 32px;
+				background: linear-gradient(135deg, #ff6b35 0%, #ffa500 100%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+				margin-bottom: 10px;
+			}
+
+			.header p {
+				color: #999;
+				font-size: 14px;
+			}
+
+			.input-section {
+				background: rgba(255, 255, 255, 0.05);
+				border: 1px solid rgba(255, 107, 53, 0.2);
+				border-radius: 12px;
+				padding: 24px;
+				margin-bottom: 30px;
+			}
+
+			.input-group {
+				margin-bottom: 16px;
+			}
+
+			label {
+				display: block;
+				font-size: 12px;
+				font-weight: 600;
+				color: #b0b0b0;
+				text-transform: uppercase;
+				letter-spacing: 0.5px;
+				margin-bottom: 8px;
+			}
+
+			input[type="text"],
+			select {
+				width: 100%;
+				padding: 12px;
+				border: 1px solid rgba(255, 107, 53, 0.2);
+				border-radius: 8px;
+				background: rgba(255, 255, 255, 0.05);
+				color: #e0e0e0;
+				font-size: 14px;
+				transition: all 0.2s ease;
+			}
+
+			input[type="text"]:focus,
+			select:focus {
+				outline: none;
+				border-color: rgba(255, 107, 53, 0.6);
+				background: rgba(255, 255, 255, 0.08);
+				box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+			}
+
+			.format-grid {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr 1fr;
+				gap: 12px;
+				margin-bottom: 16px;
+			}
+
+			.format-btn {
+				padding: 12px;
+				border: 1px solid rgba(255, 107, 53, 0.2);
+				border-radius: 8px;
+				background: rgba(255, 107, 53, 0.05);
+				color: #e0e0e0;
+				font-size: 12px;
+				font-weight: 600;
+				cursor: pointer;
+				transition: all 0.2s ease;
+				text-transform: uppercase;
+				letter-spacing: 0.3px;
+			}
+
+			.format-btn:hover {
+				border-color: rgba(255, 107, 53, 0.5);
+				background: rgba(255, 107, 53, 0.15);
+			}
+
+			.format-btn.active {
+				border-color: #ff6b35;
+				background: linear-gradient(
+					135deg,
+					rgba(255, 107, 53, 0.3) 0%,
+					rgba(255, 165, 0, 0.1) 100%
+				);
+				color: #ffb366;
+				box-shadow: 0 4px 12px rgba(255, 107, 53, 0.2);
+			}
+
+			.button-group {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 12px;
+			}
+
+			.btn {
+				padding: 12px;
+				border: none;
+				border-radius: 8px;
+				font-size: 13px;
+				font-weight: 600;
+				cursor: pointer;
+				transition: all 0.2s ease;
+				text-transform: uppercase;
+				letter-spacing: 0.3px;
+			}
+
+			.btn-primary {
+				background: linear-gradient(135deg, #ff6b35 0%, #ffa500 100%);
+				color: white;
+			}
+
+			.btn-primary:hover {
+				transform: translateY(-2px);
+				box-shadow: 0 8px 16px rgba(255, 107, 53, 0.3);
+			}
+
+			.btn-secondary {
+				background: rgba(255, 255, 255, 0.1);
+				color: #e0e0e0;
+				border: 1px solid rgba(255, 255, 255, 0.15);
+			}
+
+			.btn:disabled {
+				opacity: 0.5;
+				cursor: not-allowed;
+			}
+
+			.status-message {
+				padding: 12px;
+				border-radius: 8px;
+				margin-bottom: 16px;
+				display: none;
+				font-size: 13px;
+			}
+
+			.status-message.show {
+				display: block;
+			}
+
+			.status-message.success {
+				background: rgba(76, 175, 80, 0.1);
+				border: 1px solid rgba(76, 175, 80, 0.3);
+				color: #4caf50;
+			}
+
+			.status-message.error {
+				background: rgba(244, 67, 54, 0.1);
+				border: 1px solid rgba(244, 67, 54, 0.3);
+				color: #f44336;
+			}
+
+			.status-message.info {
+				background: rgba(100, 200, 255, 0.1);
+				border: 1px solid rgba(100, 200, 255, 0.3);
+				color: #64c8ff;
+			}
+
+			.downloads-section h2 {
+				font-size: 20px;
+				margin-bottom: 16px;
+				color: #e0e0e0;
+			}
+
+			.download-item {
+				background: rgba(255, 255, 255, 0.05);
+				border: 1px solid rgba(255, 107, 53, 0.2);
+				border-radius: 8px;
+				padding: 16px;
+				margin-bottom: 12px;
+			}
+
+			.download-header {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-bottom: 12px;
+			}
+
+			.download-title {
+				font-weight: 600;
+				color: #ffb366;
+				flex: 1;
+				word-break: break-word;
+			}
+
+			.download-status {
+				font-size: 12px;
+				color: #999;
+			}
+
+			.download-bar {
+				width: 100%;
+				height: 8px;
+				background: rgba(255, 255, 255, 0.1);
+				border-radius: 4px;
+				overflow: hidden;
+				margin-bottom: 8px;
+			}
+
+			.download-progress {
+				height: 100%;
+				background: linear-gradient(90deg, #ff6b35 0%, #ffa500 100%);
+				width: 0%;
+				transition: width 0.3s ease;
+			}
+
+			.download-info {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr 1fr;
+				gap: 12px;
+				font-size: 12px;
+				color: #999;
+				margin-bottom: 12px;
+			}
+
+			.info-item {
+				display: flex;
+				flex-direction: column;
+				gap: 4px;
+			}
+
+			.info-label {
+				color: #666;
+				font-size: 11px;
+				text-transform: uppercase;
+			}
+
+			.info-value {
+				color: #e0e0e0;
+			}
+
+			.download-actions {
+				display: flex;
+				gap: 8px;
+			}
+
+			.download-btn {
+				flex: 1;
+				padding: 8px;
+				border: 1px solid rgba(255, 107, 53, 0.3);
+				background: rgba(255, 107, 53, 0.1);
+				color: #ffb366;
+				border-radius: 4px;
+				font-size: 12px;
+				cursor: pointer;
+				transition: all 0.2s ease;
+				text-transform: uppercase;
+				font-weight: 600;
+			}
+
+			.download-btn:hover {
+				background: rgba(255, 107, 53, 0.2);
+				border-color: rgba(255, 107, 53, 0.5);
+			}
+
+			.download-btn.danger {
+				background: rgba(244, 67, 54, 0.1);
+				color: #f44336;
+				border-color: rgba(244, 67, 54, 0.3);
+			}
+
+			.download-btn.danger:hover {
+				background: rgba(244, 67, 54, 0.2);
+				border-color: rgba(244, 67, 54, 0.5);
+			}
+
+			.empty-message {
+				text-align: center;
+				color: #666;
+				padding: 40px 20px;
+				font-size: 14px;
+			}
+
+			@keyframes spin {
+				to {
+					transform: rotate(360deg);
+				}
+			}
+
+			.spinner {
+				display: inline-block;
+				width: 12px;
+				height: 12px;
+				border: 2px solid rgba(255, 107, 53, 0.3);
+				border-top-color: #ff6b35;
+				border-radius: 50%;
+				animation: spin 0.8s linear infinite;
+				margin-right: 6px;
+				vertical-align: middle;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<h1>🎬 MediaFlow Download Manager</h1>
+				<p>Download videos, audio, and images from 1000+ websites</p>
+			</div>
+
+			<div class="input-section">
+				<div class="input-group">
+					<label for="urlInput">Media URL</label>
+					<input
+						type="text"
+						id="urlInput"
+						placeholder="https://youtube.com/watch?v=..."
+						autocomplete="off"
+					/>
+				</div>
+
+				<div class="input-group">
+					<label>Select Format</label>
+					<div class="format-grid">
+						<button class="format-btn" data-format="video">
+							🎬 Video (MP4)
+						</button>
+						<button class="format-btn" data-format="audio">
+							🎵 Audio (MP3)
+						</button>
+						<button class="format-btn" data-format="webm">▶️ WebM</button>
+						<button class="format-btn" data-format="image">🖼️ Images</button>
+					</div>
+				</div>
+
+				<div id="statusMessage" class="status-message"></div>
+
+				<div class="button-group">
+					<button id="downloadBtn" class="btn btn-primary">📥 Download</button>
+					<button id="pasteBtn" class="btn btn-secondary">📋 Paste URL</button>
+				</div>
+			</div>
+
+			<div class="downloads-section">
+				<h2>Active Downloads</h2>
+				<div id="downloadsList"></div>
+			</div>
+		</div>
+
+		<script src="/socket.io/socket.io.js"></script>
+		<script>
+			const API_URL = "http://localhost:7860/api";
+			let selectedFormat = "video";
+			let downloads = {};
+			let socket = null;
+
+			// Connect to Socket.IO
+			function connectSocket() {
+				socket = io();
+
+				socket.on("connect", () => {
+					console.log("✅ Connected to server via Socket.IO");
+				});
+
+				socket.on("download-list", (activeDownloads) => {
+					console.log("📨 Received download list");
+					downloads = activeDownloads || {};
+					renderDownloads();
+				});
+
+				socket.on("download-started", (download) => {
+					console.log("📨 Download started:", download.id);
+					downloads[download.id] = download;
+					renderDownloads();
+				});
+
+				socket.on("download-completed", (download) => {
+					console.log("📨 Download completed:", download.id);
+					downloads[download.id] = download;
+					renderDownloads();
+				});
+
+				socket.on("download-failed", (download) => {
+					console.log("📨 Download failed:", download.id);
+					downloads[download.id] = download;
+					renderDownloads();
+				});
+
+				socket.on("disconnect", () => {
+					console.log("⚠️  Disconnected from server");
+				});
+
+				socket.on("connect_error", (error) => {
+					console.error("❌ Connection error:", error);
+				});
+			}
+
+			// Format selection
+			document.querySelectorAll(".format-btn").forEach((btn) => {
+				btn.addEventListener("click", () => {
+					document
+						.querySelectorAll(".format-btn")
+						.forEach((b) => b.classList.remove("active"));
+					btn.classList.add("active");
+					selectedFormat = btn.dataset.format;
+				});
+			});
+
+			document.querySelector('[data-format="video"]').classList.add("active");
+
+			// Paste button
+			document
+				.getElementById("pasteBtn")
+				.addEventListener("click", async () => {
+					try {
+						const text = await navigator.clipboard.readText();
+						document.getElementById("urlInput").value = text;
+						document.getElementById("urlInput").focus();
+					} catch (err) {
+						showStatus("Failed to paste from clipboard", "error");
+					}
+				});
+
+			// Download button
+			document.getElementById("downloadBtn").addEventListener("click", () => {
+				const url = document.getElementById("urlInput").value.trim();
+				if (!url) {
+					showStatus("Please enter a URL", "error");
+					return;
+				}
+				startDownload(url, selectedFormat);
+			});
+
+			// Enter key
+			document.getElementById("urlInput").addEventListener("keypress", (e) => {
+				if (e.key === "Enter") {
+					document.getElementById("downloadBtn").click();
+				}
+			});
+
+			async function startDownload(url, format) {
+				showStatus(`<span class="spinner"></span>Starting download...`, "info");
+
+				try {
+					const response = await fetch(`${API_URL}/download`, {
+						method: "POST",
+						headers: {
+							"Content-Type": "application/json",
+						},
+						body: JSON.stringify({ url, format }),
+					});
+
+					const data = await response.json();
+
+					if (data.success) {
+						showStatus("✅ Download started!", "success");
+						document.getElementById("urlInput").value = "";
+					} else {
+						showStatus(`❌ ${data.error}`, "error");
+					}
+				} catch (err) {
+					showStatus(`❌ ${err.message}`, "error");
+				}
+			}
+
+			function renderDownloads() {
+				const list = document.getElementById("downloadsList");
+				const downloadList = Object.values(downloads);
+
+				if (downloadList.length === 0) {
+					list.innerHTML =
+						'<div class="empty-message">No downloads yet. Paste a URL and click Download!</div>';
+					return;
+				}
+
+				list.innerHTML = downloadList
+					.map(
+						(dl) => `
+				<div class="download-item">
+					<div class="download-header">
+						<div class="download-title">${dl.title}</div>
+						<div class="download-status">${dl.status.toUpperCase()}</div>
+					</div>
+					<div class="download-bar">
+						<div class="download-progress" style="width: ${dl.progress}%"></div>
+					</div>
+					<div class="download-info">
+						<div class="info-item">
+							<span class="info-label">Progress</span>
+							<span class="info-value">${dl.progress}%</span>
+						</div>
+						<div class="info-item">
+							<span class="info-label">Speed</span>
+							<span class="info-value">${dl.speed}</span>
+						</div>
+						<div class="info-item">
+							<span class="info-label">Size</span>
+							<span class="info-value">${dl.size}</span>
+						</div>
+						<div class="info-item">
+							<span class="info-label">Time Left</span>
+							<span class="info-value">${dl.timeRemaining}</span>
+						</div>
+					</div>
+					${
+						dl.status === "downloading"
+							? `
+						<div class="download-actions">
+							<button class="download-btn">⏸ Pause</button>
+							<button class="download-btn danger">✕ Cancel</button>
+						</div>
+					`
+							: `
+						<div class="download-actions">
+							<button class="download-btn" onclick="removeDownload('${dl.id}')">Remove</button>
+						</div>
+					`
+					}
+				</div>
+			`,
+					)
+					.join("");
+			}
+
+			function removeDownload(id) {
+				delete downloads[id];
+				renderDownloads();
+			}
+
+			function showStatus(message, type) {
+				const statusEl = document.getElementById("statusMessage");
+				statusEl.innerHTML = message;
+				statusEl.className = `status-message show ${type}`;
+
+				if (type === "success" || type === "error") {
+					setTimeout(() => {
+						statusEl.classList.remove("show");
+					}, 4000);
+				}
+			}
+
+			// Connect to Socket.IO
+			connectSocket();
+
+			// Initial render
+			renderDownloads();
+		</script>
+	</body>
+</html>
