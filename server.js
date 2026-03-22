@@ -97,29 +97,22 @@ app.get("/api/test", (req, res) => {
 	});
 });
 
-// Main download endpoint
+// Main download endpoint with quality support
 app.post('/api/download', (req, res) => {
-	const { url, format } = req.body;
+	const { url, format, quality } = req.body;  // ✅ GET QUALITY FROM FRONTEND
 
 	if (!url) {
-		return res.status(400).json({
-			success: false,
-			error: 'URL is required'
-		});
+		return res.status(400).json({ success: false, error: 'URL is required' });
 	}
 
 	try {
 		new URL(url);
 	} catch (err) {
-		return res.status(400).json({
-			success: false,
-			error: 'Invalid URL'
-		});
+		return res.status(400).json({ success: false, error: 'Invalid URL' });
 	}
 
 	const downloadId = Date.now().toString();
 
-	// Create download entry
 	activeDownloads[downloadId] = {
 		id: downloadId,
 		url: url,
@@ -133,18 +126,15 @@ app.post('/api/download', (req, res) => {
 		startTime: new Date()
 	};
 
-	// Broadcast to all clients
 	broadcastToAll('download-started', activeDownloads[downloadId]);
 
-	console.log(`\n⬇️  Starting ${format} download from: ${url}`);
+	console.log(`\n⬇️  Starting ${format} download (Quality: ${quality || 'best'}) from: ${url}`);
 
-	// Build command (respecting quality if provided)
 	let command = '';
-	const quality = req.body.quality || 'best';
 
+	// ✅ USE QUALITY PARAMETER
 	switch (format) {
-		case 'video':
-			// Map quality to yt-dlp format
+		case 'video': {
 			let videoFormat = 'best[ext=mp4]';
 			if (quality === '1080p') videoFormat = 'best[height<=1080][ext=mp4]';
 			else if (quality === '720p') videoFormat = 'best[height<=720][ext=mp4]';
@@ -152,112 +142,134 @@ app.post('/api/download', (req, res) => {
 			else if (quality === '360p') videoFormat = 'best[height<=360][ext=mp4]';
 			else if (quality === '240p') videoFormat = 'best[height<=240][ext=mp4]';
 
-			command = `yt-dlp --no-playlist -f "${videoFormat}" -o "${path.join(DOWNLOADS_DIR, '%(title)s.%(ext)s')}" "${url}"`;
+			command = `yt-dlp --no-playlist --js-runtimes node -f "${videoFormat}" --socket-timeout 30 --extractor-args "youtube:player_client=web,tvhtml5,android,mweb" -o "${path.join(DOWNLOADS_DIR, '%(title)s.%(ext)s')}" "${url}"`;
 			break;
-		case 'audio':
-			// Map quality to audio bitrate
+		}
+		case 'audio': {
 			let audioBitrate = '192K';
 			if (quality === '320') audioBitrate = '320K';
 			else if (quality === '256') audioBitrate = '256K';
 			else if (quality === '192') audioBitrate = '192K';
 			else if (quality === '128') audioBitrate = '128K';
 
-			command = `yt-dlp --no-playlist -f bestaudio --extract-audio --audio-format mp3 --audio-quality ${audioBitrate} -o "${path.join(DOWNLOADS_DIR, '%(title)s.%(ext)s')}" "${url}"`;
+			command = `yt-dlp --no-playlist --js-runtimes node -f bestaudio --extract-audio --audio-format mp3 --audio-quality ${audioBitrate} --socket-timeout 30 --extractor-args "youtube:player_client=web,tvhtml5,android,mweb" -o "${path.join(DOWNLOADS_DIR, '%(title)s.%(ext)s')}" "${url}"`;
 			break;
-		case 'webm':
+		}
+		case 'webm': {
 			let webmFormat = 'best[ext=webm]';
 			if (quality === '1080p') webmFormat = 'best[height<=1080][ext=webm]';
 			else if (quality === '720p') webmFormat = 'best[height<=720][ext=webm]';
 			else if (quality === '480p') webmFormat = 'best[height<=480][ext=webm]';
 			else if (quality === '360p') webmFormat = 'best[height<=360][ext=webm]';
 
-			command = `yt-dlp --no-playlist -f "${webmFormat}" -o "${path.join(DOWNLOADS_DIR, '%(title)s.%(ext)s')}" "${url}"`;
+			command = `yt-dlp --no-playlist --js-runtimes node -f "${webmFormat}" --socket-timeout 30 --extractor-args "youtube:player_client=web,tvhtml5,android,mweb" -o "${path.join(DOWNLOADS_DIR, '%(title)s.%(ext)s')}" "${url}"`;
 			break;
+		}
 		case 'image':
-			command = `yt-dlp --no-playlist --write-thumbnail -o "${path.join(DOWNLOADS_DIR, '%(title)s-%(id)s.%(ext)s')}" "${url}"`;
+			command = `yt-dlp --no-playlist --js-runtimes node --write-thumbnail --socket-timeout 30 --extractor-args "youtube:player_client=web,tvhtml5,android,mweb" -o "${path.join(DOWNLOADS_DIR, '%(title)s-%(id)s.%(ext)s')}" "${url}"`;
 			break;
 		default:
 			return res.status(400).json({ success: false, error: 'Invalid format' });
 	}
 
-	const timeout = 300000; // 5 minutes
+	const timeout = 300000;
 
 	console.log(`🔧 Command: ${command.replace(url, '[URL]')}`);
 
-	const proc = exec(command, {
-		timeout: timeout,
-		maxBuffer: 10 * 1024 * 1024
-	}, (error, stdout, stderr) => {
-		if (error) {
-			console.error('❌ Error:', error.message);
+	let retries = 3;
+	let delay = 2000;
 
-			activeDownloads[downloadId].status = 'failed';
-			activeDownloads[downloadId].error = error.message;
+	function attemptDownload() {
+		const proc = exec(command, {
+			timeout: timeout,
+			maxBuffer: 10 * 1024 * 1024
+		}, (error, stdout, stderr) => {
+			if (error) {
+				console.error('❌ Error:', error.message);
 
-			broadcastToAll('download-failed', activeDownloads[downloadId]);
+				if (error.message.includes('429') || error.message.includes('Too Many Requests')) {
+					if (retries > 0) {
+						retries--;
+						console.log(`⏳ Rate limited. Retrying in ${delay/1000}s... (${retries} retries left)`);
+                        
+						activeDownloads[downloadId].status = 'waiting';
+						broadcastToAll('download-waiting', activeDownloads[downloadId]);
 
-			return res.status(500).json({ success: false, error: error.message || 'Download failed' });
-		}
+						setTimeout(attemptDownload, delay);
+						delay *= 2;
+						return;
+					}
+				}
 
-		console.log('✅ Download completed!');
-		console.log('📊 Output:', stdout);
+				activeDownloads[downloadId].status = 'failed';
+				activeDownloads[downloadId].error = error.message;
+				broadcastToAll('download-failed', activeDownloads[downloadId]);
 
-		activeDownloads[downloadId].status = 'completed';
-		activeDownloads[downloadId].progress = 100;
-		activeDownloads[downloadId].endTime = new Date();
+				return res.status(500).json({ 
+					success: false, 
+					error: error.message || 'Download failed' 
+				});
+			}
 
-		broadcastToAll('download-completed', activeDownloads[downloadId]);
+			console.log('✅ Download completed!');
 
-		res.json({
-			success: true,
-			message: `${format} download completed!`,
-			file: 'File saved to Downloads folder'
+			activeDownloads[downloadId].status = 'completed';
+			activeDownloads[downloadId].progress = 100;
+			activeDownloads[downloadId].endTime = new Date();
+
+			broadcastToAll('download-completed', activeDownloads[downloadId]);
+
+			res.json({
+				success: true,
+				message: 'Download completed!',
+				file: 'File saved to Downloads folder'
+			});
 		});
-	});
 
-	// Log realtime progress
-	proc.stdout?.on('data', (data) => {
-		console.log('📊 Progress:', data.toString().trim());
-		// Optionally parse progress from stdout and update activeDownloads
-	});
+		proc.stdout?.on('data', (data) => {
+			console.log('📊 Progress:', data.toString().trim());
+		});
 
-	proc.stderr?.on('data', (data) => {
-		console.log('⚠️  Info:', data.toString().trim());
-	});
+		proc.stderr?.on('data', (data) => {
+			console.log('⚠️  Info:', data.toString().trim());
+		});
+	}
+
+	attemptDownload();
 });
 
-async function processDownload(url, format, quality = 'best') {
+async function processDownload(url, format, quality = "best") {
 	return new Promise((resolve, reject) => {
 		let command = "";
 
 		switch (format) {
 			case "video":
-				let videoFormat = 'best[ext=mp4]';
-				if (quality === '1080p') videoFormat = 'best[height<=1080][ext=mp4]';
-				else if (quality === '720p') videoFormat = 'best[height<=720][ext=mp4]';
-				else if (quality === '480p') videoFormat = 'best[height<=480][ext=mp4]';
-				else if (quality === '360p') videoFormat = 'best[height<=360][ext=mp4]';
-				else if (quality === '240p') videoFormat = 'best[height<=240][ext=mp4]';
+				let videoFormat = "best[ext=mp4]";
+				if (quality === "1080p") videoFormat = "best[height<=1080][ext=mp4]";
+				else if (quality === "720p") videoFormat = "best[height<=720][ext=mp4]";
+				else if (quality === "480p") videoFormat = "best[height<=480][ext=mp4]";
+				else if (quality === "360p") videoFormat = "best[height<=360][ext=mp4]";
+				else if (quality === "240p") videoFormat = "best[height<=240][ext=mp4]";
 
 				command = `yt-dlp --no-playlist -f "${videoFormat}" -o "${path.join(DOWNLOADS_DIR, "%(title)s.%(ext)s")}" "${url}"`;
 				break;
 
 			case "audio":
-				let audioBitrate = '192K';
-				if (quality === '320') audioBitrate = '320K';
-				else if (quality === '256') audioBitrate = '256K';
-				else if (quality === '192') audioBitrate = '192K';
-				else if (quality === '128') audioBitrate = '128K';
+				let audioBitrate = "192K";
+				if (quality === "320") audioBitrate = "320K";
+				else if (quality === "256") audioBitrate = "256K";
+				else if (quality === "192") audioBitrate = "192K";
+				else if (quality === "128") audioBitrate = "128K";
 
 				command = `yt-dlp --no-playlist -f bestaudio --extract-audio --audio-format mp3 --audio-quality ${audioBitrate} -o "${path.join(DOWNLOADS_DIR, "%(title)s.%(ext)s")}" "${url}"`;
 				break;
 
 			case "webm":
-				let webmFormat = 'best[ext=webm]';
-				if (quality === '1080p') webmFormat = 'best[height<=1080][ext=webm]';
-				else if (quality === '720p') webmFormat = 'best[height<=720][ext=webm]';
-				else if (quality === '480p') webmFormat = 'best[height<=480][ext=webm]';
-				else if (quality === '360p') webmFormat = 'best[height<=360][ext=webm]';
+				let webmFormat = "best[ext=webm]";
+				if (quality === "1080p") webmFormat = "best[height<=1080][ext=webm]";
+				else if (quality === "720p") webmFormat = "best[height<=720][ext=webm]";
+				else if (quality === "480p") webmFormat = "best[height<=480][ext=webm]";
+				else if (quality === "360p") webmFormat = "best[height<=360][ext=webm]";
 
 				command = `yt-dlp --no-playlist -f "${webmFormat}" -o "${path.join(DOWNLOADS_DIR, "%(title)s.%(ext)s")}" "${url}"`;
 				break;
@@ -330,4 +342,34 @@ server.listen(PORT, () => {
 	console.log("╚════════════════════════════════════════╝");
 	console.log(`\n✅ Server running on: http://localhost:${PORT}`);
 	console.log(`✅ WebSocket: ws://localhost:${PORT}`);
-	console.log(`📁 Files 
+	console.log(`📁 Files will be saved to: ${DOWNLOADS_DIR}`);
+	console.log("\n💡 Available endpoints:");
+	console.log(
+		`   GET  http://localhost:${PORT}/api/ping      - Check if server is running`,
+	);
+	console.log(
+		`   GET  http://localhost:${PORT}/api/test      - Test yt-dlp & ffmpeg`,
+	);
+	console.log(
+		`   POST http://localhost:${PORT}/api/download  - Download media`,
+	);
+	console.log("\n💡 Keep this window open while using the extension.\n");
+
+	// Run diagnostics
+	setTimeout(() => {
+		exec("yt-dlp --version", (error, stdout) => {
+			if (error) {
+				console.log("❌ yt-dlp is NOT installed. Please install it first:");
+				console.log("   pip install yt-dlp");
+			} else {
+				console.log(`✅ yt-dlp: ${stdout.trim()}`);
+			}
+		});
+	}, 500);
+});
+
+// Graceful shutdown
+process.on("SIGINT", () => {
+	console.log("\n\n👋 MediaFlow server shutting down...");
+	process.exit(0);
+});

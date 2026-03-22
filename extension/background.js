@@ -59,6 +59,19 @@ function downloadFromContext(url, format) {
 			timestamp: Date.now(),
 		},
 	});
+}
+
+// Handle message from content.js to open popup with URL
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+	if (request.action === 'openPopupWithUrl') {
+		// Store URL and open popup
+		chrome.storage.local.set({ popupUrl: request.url }, () => {
+			chrome.action.openPopup();
+			sendResponse({ success: true });
+		});
+		return true; // Keep channel open for async response
+	}
+});
 
 	// Send to server
 	const API_URL = "http://localhost:7860/api";

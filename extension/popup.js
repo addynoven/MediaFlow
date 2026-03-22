@@ -10,7 +10,7 @@ const pasteBtn = document.getElementById("pasteBtn");
 // Check server connection on load
 window.addEventListener("load", () => {
 	checkServerConnection();
-	loadUrlFromActiveTab();
+	loadUrlFromStorage(); // Try loading from video player button first
 });
 
 // Format selection
@@ -22,18 +22,18 @@ document.querySelectorAll(".format-btn").forEach((btn) => {
 		btn.classList.add("active");
 		selectedFormat = btn.dataset.format;
 		// Show/hide quality selectors based on selected format
-		const qualityGroup = document.getElementById('qualityGroup');
-		const audioQualityGroup = document.getElementById('audioQualityGroup');
+		const qualityGroup = document.getElementById("qualityGroup");
+		const audioQualityGroup = document.getElementById("audioQualityGroup");
 
-		if (selectedFormat === 'video' || selectedFormat === 'webm') {
-			if (qualityGroup) qualityGroup.style.display = 'block';
-			if (audioQualityGroup) audioQualityGroup.style.display = 'none';
-		} else if (selectedFormat === 'audio') {
-			if (qualityGroup) qualityGroup.style.display = 'none';
-			if (audioQualityGroup) audioQualityGroup.style.display = 'block';
+		if (selectedFormat === "video" || selectedFormat === "webm") {
+			if (qualityGroup) qualityGroup.style.display = "block";
+			if (audioQualityGroup) audioQualityGroup.style.display = "none";
+		} else if (selectedFormat === "audio") {
+			if (qualityGroup) qualityGroup.style.display = "none";
+			if (audioQualityGroup) audioQualityGroup.style.display = "block";
 		} else {
-			if (qualityGroup) qualityGroup.style.display = 'none';
-			if (audioQualityGroup) audioQualityGroup.style.display = 'none';
+			if (qualityGroup) qualityGroup.style.display = "none";
+			if (audioQualityGroup) audioQualityGroup.style.display = "none";
 		}
 	});
 });
@@ -42,10 +42,10 @@ document.querySelectorAll(".format-btn").forEach((btn) => {
 document.querySelector('[data-format="video"]')?.classList.add("active");
 // Ensure quality selectors visibility matches default
 (function initQualityVisibility() {
-	const qualityGroup = document.getElementById('qualityGroup');
-	const audioQualityGroup = document.getElementById('audioQualityGroup');
-	if (qualityGroup) qualityGroup.style.display = 'block';
-	if (audioQualityGroup) audioQualityGroup.style.display = 'none';
+	const qualityGroup = document.getElementById("qualityGroup");
+	const audioQualityGroup = document.getElementById("audioQualityGroup");
+	if (qualityGroup) qualityGroup.style.display = "block";
+	if (audioQualityGroup) audioQualityGroup.style.display = "none";
 })();
 
 // Paste URL button
@@ -93,6 +93,20 @@ async function checkServerConnection() {
 	}
 }
 
+// Load URL from storage (set by video player button)
+function loadUrlFromStorage() {
+	chrome.storage.local.get('popupUrl', (result) => {
+		if (result.popupUrl) {
+			urlInput.value = result.popupUrl;
+			// Clear it after loading
+			chrome.storage.local.remove('popupUrl');
+		} else {
+			// Fallback: load from active tab if no stored URL
+			loadUrlFromActiveTab();
+		}
+	});
+}
+
 async function loadUrlFromActiveTab() {
 	try {
 		const tabs = await chrome.tabs.query({ active: true, currentWindow: true });
@@ -131,21 +145,22 @@ function isValidMediaUrl(url) {
 async function downloadMedia(url, format) {
 	downloadBtn.disabled = true;
 	showStatus(
-		`<span class="loading-spinner"></span>Downloading in ${format} format...`,
+		`<span class="loading-spinner"></span>Processing download...`,
 		"info",
 	);
 
 	try {
-		// Get quality settings
-		let quality = 'best';
-		if (format === 'video' || format === 'webm') {
-			const qEl = document.getElementById('qualitySelect');
-			if (qEl) quality = qEl.value || 'best';
-		} else if (format === 'audio') {
-			const aEl = document.getElementById('audioQualitySelect');
-			if (aEl) quality = aEl.value || '192';
+		// Get quality from dropdown
+		let quality = "best";
+		if (format === "video" || format === "webm") {
+			const qualitySelect = document.getElementById("qualitySelect");
+			if (qualitySelect) quality = qualitySelect.value;
+		} else if (format === "audio") {
+			const audioQualitySelect = document.getElementById("audioQualitySelect");
+			if (audioQualitySelect) quality = audioQualitySelect.value;
 		}
 
+		// ✅ SEND QUALITY TO SERVER
 		const response = await fetch(`${API_URL}/download`, {
 			method: "POST",
 			headers: {
@@ -154,7 +169,7 @@ async function downloadMedia(url, format) {
 			body: JSON.stringify({
 				url: url,
 				format: format,
-				quality: quality
+				quality: quality, // ✅ ADD THIS!
 			}),
 		});
 
@@ -165,16 +180,17 @@ async function downloadMedia(url, format) {
 		}
 
 		if (data.success) {
-			showStatus(`✓ Download started! Check your downloads folder.`, "success");
+			showStatus(`✅ Download started! Quality: ${quality}`, "success");
 			urlInput.value = "";
+
 			setTimeout(() => {
 				showStatus("", "");
-			}, 3000);
+			}, 4000);
 		} else {
 			throw new Error(data.error || "Unknown error");
 		}
 	} catch (err) {
-		showStatus(`✗ ${err.message}`, "error");
+		showStatus(`❌ ${err.message}`, "error");
 	} finally {
 		downloadBtn.disabled = false;
 	}

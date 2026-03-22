@@ -722,3 +722,189 @@ Deleting original file C:\Users\neon\Downloads\ feat. shully [Lyrics Romaji] (Mi
 [download] Destination: C:\Users\neon\Downloads\She Is Being Cooked  Deepak Vohara Sir  Upsc Interview.mp4
 [download]   0.0% of   10.42MiB at   18.55KiB/s ETA 09:35[download]   0.0% of   10.42MiB at   55.14KiB/s ETA 03:13[download]   0.1% of   10.42MiB at  128.04KiB/s ETA 01:23[download]   0.1% of   10.42MiB at  272.34KiB/s ETA 00:39[download]   0.3% of   10.42MiB at  477.41KiB/s ETA 00:22[download]   0.6% of   10.42MiB at  556.43KiB/s ETA 00:19[download]   1.2% of   10.42MiB at  819.14KiB/s ETA 00:12[download]   2.4% of   10.42MiB at    1.22MiB/s ETA 00:08[download]   4.8% of   10.42MiB at    1.78MiB/s ETA 00:05[download]   9.6% of   10.42MiB at    2.93MiB/s ETA 00:03[download]  19.2% of   10.42MiB at    4.71MiB/s ETA 00:01[download]  38.4% of   10.42MiB at    6.55MiB/s ETA 00:00[download]  76.8% of   10.42MiB at    4.24MiB/s ETA 00:00[download]  94.5% of   10.42MiB at    3.87MiB/s ETA 00:00[download]  94.5% of   10.42MiB at   20.20KiB/s ETA 00:29[download]  94.5% of   10.42MiB at   59.88KiB/s ETA 00:09[download]  94.5% of   10.42MiB at  139.07KiB/s ETA 00:04[download]  94.6% of   10.42MiB at  295.75KiB/s ETA 00:01[download]  94.8% of   10.42MiB at  526.21KiB/s ETA 00:01[download]  95.1% of   10.42MiB at  548.17KiB/s ETA 00:00[download]  95.7% of   10.42MiB at  778.82KiB/s ETA 00:00[download]  96.9% of   10.42MiB at    1.11MiB/s ETA 00:00[download]  99.3% of   10.42MiB at    1.80MiB/s ETA 00:00[download] 100.0% of   10.42MiB at    1.94MiB/s ETA 00:00[download] 100% of   10.42MiB in 00:00:03 at 3.19MiB/s   
 
+2026-03-22 19:35:25 +05:30: 
+⬇️  Starting video download from: https://www.youtube.com/watch?v=Az8J93srFAI
+2026-03-22 19:35:25 +05:30: 🔧 Command: yt-dlp --no-playlist -f "best[ext=mp4]" -o "C:\Users\neon\Downloads\%(title)s.%(ext)s" "[URL]"
+2026-03-22 19:35:26 +05:30: 📊 Progress: [youtube] Extracting URL: https://www.youtube.com/watch?v=Az8J93srFAI
+2026-03-22 19:35:26 +05:30: 📊 Progress: [youtube] Az8J93srFAI: Downloading webpage
+2026-03-22 19:35:28 +05:30: ⚠️  Info: WARNING: [youtube] Unable to download webpage: HTTP Error 429: Too Many Requests (caused by <HTTPError 429: Too Many Requests>)
+2026-03-22 19:35:28 +05:30: 📊 Progress: [youtube] Az8J93srFAI: Downloading initial data API JSON
+2026-03-22 19:35:29 +05:30: ⚠️  Info: WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one
+2026-03-22 19:35:29 +05:30: 📊 Progress: [youtube] Az8J93srFAI: Downloading android vr player API JSON
+2026-03-22 19:35:29 +05:30: ⚠️  Info: WARNING: [youtube] No title found in player responses; falling back to title from initial data. Other metadata may also be missing
+2026-03-22 19:35:29 +05:30: ⚠️  Info: ERROR: [youtube] Az8J93srFAI: Sign in to confirm you�re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+2026-03-22 19:35:55 +05:30: 
+⬇️  Starting video download from: https://www.youtube.com/watch?v=Az8J93srFAI
+2026-03-22 19:35:55 +05:30: 🔧 Command: yt-dlp --no-playlist -f "best[ext=mp4]" -o "C:\Users\neon\Downloads\%(title)s.%(ext)s" "[URL]"
+2026-03-22 19:35:56 +05:30: 📊 Progress: [youtube] Extracting URL: https://www.youtube.com/watch?v=Az8J93srFAI
+2026-03-22 19:35:56 +05:30: 📊 Progress: [youtube] Az8J93srFAI: Downloading webpage
+2026-03-22 19:35:58 +05:30: ⚠️  Info: WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one
+2026-03-22 19:35:58 +05:30: 📊 Progress: [youtube] Az8J93srFAI: Downloading android vr player API JSON
+2026-03-22 19:35:59 +05:30: 📊 Progress: [info] Az8J93srFAI: Downloading 1 format(s): 18
+2026-03-22 19:36:00 +05:30: 📊 Progress: [download] Destination: C:\Users\neon\Downloads\SYML - Where's My Love (Acoustic) (Lyrics).mp4
+2026-03-22 19:36:01 +05:30: 📊 Progress: [download]   0.0% of    4.69MiB at  Unknown B/s ETA Unknown
+2026-03-22 19:36:01 +05:30: 📊 Progress: [download]   0.1% of    4.69MiB at   45.92KiB/s ETA 01:44
+2026-03-22 19:36:01 +05:30: 📊 Progress: [download]   0.1% of    4.69MiB at  106.28KiB/s ETA 00:45
+2026-03-22 19:36:01 +05:30: 📊 Progress: [download]   0.3% of    4.69MiB at  225.85KiB/s ETA 00:21
+2026-03-22 19:36:01 +05:30: 📊 Progress: [download]   0.6% of    4.69MiB at  402.38KiB/s ETA 00:11
+2026-03-22 19:36:01 +05:30: 📊 Progress: [download]   1.3% of    4.69MiB at  340.76KiB/s ETA 00:13
+2026-03-22 19:36:01 +05:30: 📊 Progress: [download]   2.6% of    4.69MiB at  220.09KiB/s ETA 00:21
+2026-03-22 19:36:01 +05:30: 📊 Progress: [download]   5.3% of    4.69MiB at  385.54KiB/s ETA 00:11
+2026-03-22 19:36:01 +05:30: 📊 Progress: [download]  10.6% of    4.69MiB at  683.84KiB/s ETA 00:06
+2026-03-22 19:36:01 +05:30: 📊 Progress: [download]  21.3% of    4.69MiB at    1.21MiB/s ETA 00:03
+2026-03-22 19:36:01 +05:30: 📊 Progress: [download]  42.6% of    4.69MiB at    2.21MiB/s ETA 00:01
+2026-03-22 19:36:02 +05:30: 📊 Progress: [download]  85.2% of    4.69MiB at    3.02MiB/s ETA 00:00
+2026-03-22 19:36:02 +05:30: 📊 Progress: [download] 100.0% of    4.69MiB at    3.32MiB/s ETA 00:00
+2026-03-22 19:36:02 +05:30: 📊 Progress: [download] 100% of    4.69MiB in 00:00:03 at 1.45MiB/s
+2026-03-22 19:36:02 +05:30: 📊 Progress: 
+2026-03-22 19:36:02 +05:30: ✅ Download completed!
+2026-03-22 19:36:02 +05:30: 📊 Output: [youtube] Extracting URL: https://www.youtube.com/watch?v=Az8J93srFAI
+[youtube] Az8J93srFAI: Downloading webpage
+[youtube] Az8J93srFAI: Downloading android vr player API JSON
+[info] Az8J93srFAI: Downloading 1 format(s): 18
+[download] Destination: C:\Users\neon\Downloads\SYML - Where's My Love (Acoustic) (Lyrics).mp4
+[download]   0.0% of    4.69MiB at  Unknown B/s ETA Unknown[download]   0.1% of    4.69MiB at   45.92KiB/s ETA 01:44  [download]   0.1% of    4.69MiB at  106.28KiB/s ETA 00:45[download]   0.3% of    4.69MiB at  225.85KiB/s ETA 00:21[download]   0.6% of    4.69MiB at  402.38KiB/s ETA 00:11[download]   1.3% of    4.69MiB at  340.76KiB/s ETA 00:13[download]   2.6% of    4.69MiB at  220.09KiB/s ETA 00:21[download]   5.3% of    4.69MiB at  385.54KiB/s ETA 00:11[download]  10.6% of    4.69MiB at  683.84KiB/s ETA 00:06[download]  21.3% of    4.69MiB at    1.21MiB/s ETA 00:03[download]  42.6% of    4.69MiB at    2.21MiB/s ETA 00:01[download]  85.2% of    4.69MiB at    3.02MiB/s ETA 00:00[download] 100.0% of    4.69MiB at    3.32MiB/s ETA 00:00[download] 100% of    4.69MiB in 00:00:03 at 1.45MiB/s   
+
+2026-03-22 19:42:37 +05:30: 
+⬇️  Starting video download from: https://www.youtube.com/watch?v=b3LJlZBWI8w
+2026-03-22 19:42:37 +05:30: 🔧 Command: yt-dlp --no-playlist -f "best[ext=mp4]" -o "C:\Users\neon\Downloads\%(title)s.%(ext)s" "[URL]"
+2026-03-22 19:42:38 +05:30: 📊 Progress: [youtube] Extracting URL: https://www.youtube.com/watch?v=b3LJlZBWI8w
+2026-03-22 19:42:38 +05:30: 📊 Progress: [youtube] b3LJlZBWI8w: Downloading webpage
+2026-03-22 19:42:40 +05:30: ⚠️  Info: WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one
+2026-03-22 19:42:40 +05:30: 📊 Progress: [youtube] b3LJlZBWI8w: Downloading android vr player API JSON
+2026-03-22 19:42:40 +05:30: 📊 Progress: [info] b3LJlZBWI8w: Downloading 1 format(s): 18
+2026-03-22 19:42:41 +05:30: 📊 Progress: [download] Destination: C:\Users\neon\Downloads\SYML - Where's My Love (Acoustic).mp4
+2026-03-22 19:42:41 +05:30: 📊 Progress: [download]   0.0% of    4.47MiB at  Unknown B/s ETA Unknown
+2026-03-22 19:42:41 +05:30: 📊 Progress: [download]   0.1% of    4.47MiB at   59.69KiB/s ETA 01:16
+2026-03-22 19:42:41 +05:30: 📊 Progress: [download]   0.2% of    4.47MiB at  137.67KiB/s ETA 00:33
+2026-03-22 19:42:41 +05:30: 📊 Progress: [download]   0.3% of    4.47MiB at  291.28KiB/s ETA 00:15
+2026-03-22 19:42:41 +05:30: 📊 Progress: [download]   0.7% of    4.47MiB at  498.62KiB/s ETA 00:09
+2026-03-22 19:42:41 +05:30: 📊 Progress: [download]   1.4% of    4.47MiB at  605.75KiB/s ETA 00:07
+2026-03-22 19:42:41 +05:30: 📊 Progress: [download]   2.8% of    4.47MiB at  944.11KiB/s ETA 00:04
+2026-03-22 19:42:41 +05:30: 📊 Progress: [download]   5.6% of    4.47MiB at    1.37MiB/s ETA 00:03
+2026-03-22 19:42:41 +05:30: 📊 Progress: [download]  11.2% of    4.47MiB at    2.21MiB/s ETA 00:01
+2026-03-22 19:42:41 +05:30: 📊 Progress: [download]  22.4% of    4.47MiB at    3.36MiB/s ETA 00:01
+2026-03-22 19:42:42 +05:30: 📊 Progress: [download]  44.8% of    4.47MiB at    5.45MiB/s ETA 00:00
+2026-03-22 19:42:42 +05:30: 📊 Progress: [download]  89.6% of    4.47MiB at    5.65MiB/s ETA 00:00
+2026-03-22 19:42:42 +05:30: 📊 Progress: [download] 100.0% of    4.47MiB at    5.03MiB/s ETA 00:00
+2026-03-22 19:42:42 +05:30: 📊 Progress: [download] 100% of    4.47MiB in 00:00:01 at 2.62MiB/s
+2026-03-22 19:42:42 +05:30: 📊 Progress: 
+2026-03-22 19:42:42 +05:30: ✅ Download completed!
+2026-03-22 19:42:42 +05:30: 📊 Output: [youtube] Extracting URL: https://www.youtube.com/watch?v=b3LJlZBWI8w
+[youtube] b3LJlZBWI8w: Downloading webpage
+[youtube] b3LJlZBWI8w: Downloading android vr player API JSON
+[info] b3LJlZBWI8w: Downloading 1 format(s): 18
+[download] Destination: C:\Users\neon\Downloads\SYML - Where's My Love (Acoustic).mp4
+[download]   0.0% of    4.47MiB at  Unknown B/s ETA Unknown[download]   0.1% of    4.47MiB at   59.69KiB/s ETA 01:16  [download]   0.2% of    4.47MiB at  137.67KiB/s ETA 00:33[download]   0.3% of    4.47MiB at  291.28KiB/s ETA 00:15[download]   0.7% of    4.47MiB at  498.62KiB/s ETA 00:09[download]   1.4% of    4.47MiB at  605.75KiB/s ETA 00:07[download]   2.8% of    4.47MiB at  944.11KiB/s ETA 00:04[download]   5.6% of    4.47MiB at    1.37MiB/s ETA 00:03[download]  11.2% of    4.47MiB at    2.21MiB/s ETA 00:01[download]  22.4% of    4.47MiB at    3.36MiB/s ETA 00:01[download]  44.8% of    4.47MiB at    5.45MiB/s ETA 00:00[download]  89.6% of    4.47MiB at    5.65MiB/s ETA 00:00[download] 100.0% of    4.47MiB at    5.03MiB/s ETA 00:00[download] 100% of    4.47MiB in 00:00:01 at 2.62MiB/s   
+
+2026-03-22 19:44:55 +05:30: ❌ Client disconnected: iVq_dQP5OB9hI3F8AAAH
+2026-03-22 19:44:55 +05:30: ✅ Client connected via Socket.IO: ypgaPw4xm4kwNR7tAAAJ
+2026-03-22 20:03:56 +05:30: ❌ Client disconnected: ypgaPw4xm4kwNR7tAAAJ
+2026-03-22 20:03:56 +05:30: ✅ Client connected via Socket.IO: Q_ws0oz7oI9Co91dAAAL
+2026-03-22 20:07:01 +05:30: 📁 Download directory: C:\Users\neon\Downloads
+2026-03-22 20:07:01 +05:30: 
+
+2026-03-22 20:07:01 +05:30: ╔════════════════════════════════════════╗
+2026-03-22 20:07:01 +05:30: ║      🎬 MediaFlow Server Started 🎬      ║
+2026-03-22 20:07:01 +05:30: ╚════════════════════════════════════════╝
+2026-03-22 20:07:01 +05:30: 
+✅ Server running on: http://localhost:7860
+2026-03-22 20:07:01 +05:30: ✅ WebSocket: ws://localhost:7860
+2026-03-22 20:07:01 +05:30: 📁 Files will be saved to: C:\Users\neon\Downloads
+2026-03-22 20:07:01 +05:30: 
+💡 Available endpoints:
+2026-03-22 20:07:01 +05:30:    GET  http://localhost:7860/api/ping      - Check if server is running
+2026-03-22 20:07:01 +05:30:    GET  http://localhost:7860/api/test      - Test yt-dlp & ffmpeg
+2026-03-22 20:07:01 +05:30:    POST http://localhost:7860/api/download  - Download media
+2026-03-22 20:07:01 +05:30: 
+💡 Keep this window open while using the extension.
+
+2026-03-22 20:07:02 +05:30: ✅ Client connected via Socket.IO: TVzsxzzIvbwz_DYzAAAB
+2026-03-22 20:07:03 +05:30: ✅ yt-dlp: 2026.03.03
+2026-03-22 20:09:43 +05:30: 
+⬇️  Starting video download (Quality: best) from: https://www.youtube.com/watch?v=vNsoHV8YtE4&list=RDvNsoHV8YtE4&start_radio=1
+2026-03-22 20:09:43 +05:30: 🔧 Command: yt-dlp --no-playlist --js-runtimes node -f "best[ext=mp4]" --socket-timeout 30 --extractor-args "youtube:player_client=web,tvhtml5,android,mweb" -o "C:\Users\neon\Downloads\%(title)s.%(ext)s" "[URL]"
+2026-03-22 20:09:44 +05:30: 📊 Progress: [youtube:tab] Extracting URL: https://www.youtube.com/watch?v=vNsoHV8YtE4&list=RDvNsoHV8YtE4&start_radio=1
+2026-03-22 20:09:44 +05:30: 📊 Progress: [youtube:tab] Downloading just the video vNsoHV8YtE4 because of --no-playlist
+2026-03-22 20:09:44 +05:30: 📊 Progress: [youtube] Extracting URL: https://www.youtube.com/watch?v=vNsoHV8YtE4
+2026-03-22 20:09:44 +05:30: 📊 Progress: [youtube] vNsoHV8YtE4: Downloading webpage
+2026-03-22 20:09:46 +05:30: ⚠️  Info: WARNING: [youtube] Skipping unsupported client "tvhtml5"
+2026-03-22 20:09:46 +05:30: 📊 Progress: [youtube] vNsoHV8YtE4: Downloading web player API JSON
+2026-03-22 20:09:46 +05:30: 📊 Progress: [youtube] vNsoHV8YtE4: Downloading android player API JSON
+2026-03-22 20:09:46 +05:30: 📊 Progress: [youtube] vNsoHV8YtE4: Downloading mweb client config
+2026-03-22 20:09:47 +05:30: 📊 Progress: [youtube] vNsoHV8YtE4: Downloading mweb player API JSON
+2026-03-22 20:09:47 +05:30: ⚠️  Info: WARNING: [youtube] vNsoHV8YtE4: android client https formats require a GVS PO Token which was not provided. They will be skipped as they may yield HTTP Error 403. You can manually pass a GVS PO Token for this client with --extractor-args "youtube:po_token=android.gvs+XXX". For more information, refer to  https://github.com/yt-dlp/yt-dlp/wiki/PO-Token-Guide
+2026-03-22 20:09:47 +05:30: 📊 Progress: [info] vNsoHV8YtE4: Downloading 1 format(s): 18
+2026-03-22 20:09:48 +05:30: 📊 Progress: [download] Destination: C:\Users\neon\Downloads\ feat. shully [Lyrics Romaji] (Miracle Sugite Yabai).mp4
+2026-03-22 20:09:48 +05:30: 📊 Progress: [download]   0.0% of    9.52MiB at  Unknown B/s ETA Unknown
+2026-03-22 20:09:48 +05:30: 📊 Progress: [download]   0.0% of    9.52MiB at  623.22KiB/s ETA 00:15
+2026-03-22 20:09:48 +05:30: 📊 Progress: [download]   0.1% of    9.52MiB at  120.77KiB/s ETA 01:20
+2026-03-22 20:09:48 +05:30: 📊 Progress: [download]   0.2% of    9.52MiB at  255.87KiB/s ETA 00:38
+2026-03-22 20:09:48 +05:30: 📊 Progress: [download]   0.3% of    9.52MiB at  410.85KiB/s ETA 00:23
+2026-03-22 20:09:48 +05:30: 📊 Progress: [download]   0.6% of    9.52MiB at  444.09KiB/s ETA 00:21
+2026-03-22 20:09:48 +05:30: 📊 Progress: [download]   1.3% of    9.52MiB at  674.78KiB/s ETA 00:14
+2026-03-22 20:09:48 +05:30: 📊 Progress: [download]   2.6% of    9.52MiB at 1021.74KiB/s ETA 00:09
+2026-03-22 20:09:48 +05:30: 📊 Progress: [download]   5.2% of    9.52MiB at    1.59MiB/s ETA 00:05
+2026-03-22 20:09:48 +05:30: 📊 Progress: [download]  10.5% of    9.52MiB at    2.67MiB/s ETA 00:03
+2026-03-22 20:09:48 +05:30: 📊 Progress: [download]  21.0% of    9.52MiB at    4.31MiB/s ETA 00:01
+2026-03-22 20:09:49 +05:30: 📊 Progress: [download]  42.0% of    9.52MiB at    6.31MiB/s ETA 00:00
+2026-03-22 20:09:50 +05:30: 📊 Progress: [download]  84.0% of    9.52MiB at    4.06MiB/s ETA 00:00
+2026-03-22 20:09:50 +05:30: 📊 Progress: [download] 100.0% of    9.52MiB at    3.78MiB/s ETA 00:00
+2026-03-22 20:09:50 +05:30: 📊 Progress: [download] 100% of    9.52MiB in 00:00:03 at 2.77MiB/s
+2026-03-22 20:09:50 +05:30: 📊 Progress: 
+2026-03-22 20:09:51 +05:30: ✅ Download completed!
+2026-03-22 20:12:17 +05:30: 
+⬇️  Starting audio download (Quality: 320) from: https://music.youtube.com/watch?v=ukzOgoLjHLk&list=RDAMVMukzOgoLjHLk
+2026-03-22 20:12:17 +05:30: 🔧 Command: yt-dlp --no-playlist --js-runtimes node -f bestaudio --extract-audio --audio-format mp3 --audio-quality 320K --socket-timeout 30 --extractor-args "youtube:player_client=web,tvhtml5,android,mweb" -o "C:\Users\neon\Downloads\%(title)s.%(ext)s" "[URL]"
+2026-03-22 20:12:18 +05:30: 📊 Progress: [youtube:tab] Extracting URL: https://music.youtube.com/watch?v=ukzOgoLjHLk&list=RDAMVMukzOgoLjHLk
+2026-03-22 20:12:18 +05:30: ⚠️  Info: WARNING: [youtube:tab] YouTube Music is not directly supported. Redirecting to https://www.youtube.com/watch?v=ukzOgoLjHLk&list=RDAMVMukzOgoLjHLk
+2026-03-22 20:12:18 +05:30: 📊 Progress: [youtube:tab] Downloading just the video ukzOgoLjHLk because of --no-playlist
+2026-03-22 20:12:18 +05:30: 📊 Progress: [youtube] Extracting URL: https://music.youtube.com/watch?v=ukzOgoLjHLk
+2026-03-22 20:12:18 +05:30: 📊 Progress: [youtube] ukzOgoLjHLk: Downloading webpage
+2026-03-22 20:12:19 +05:30: ⚠️  Info: WARNING: [youtube] Skipping unsupported client "tvhtml5"
+2026-03-22 20:12:19 +05:30: 📊 Progress: [youtube] ukzOgoLjHLk: Downloading web player API JSON
+2026-03-22 20:12:20 +05:30: 📊 Progress: [youtube] ukzOgoLjHLk: Downloading android player API JSON
+2026-03-22 20:12:20 +05:30: 📊 Progress: [youtube] ukzOgoLjHLk: Downloading mweb client config
+2026-03-22 20:12:21 +05:30: 📊 Progress: [youtube] ukzOgoLjHLk: Downloading mweb player API JSON
+2026-03-22 20:12:21 +05:30: ⚠️  Info: WARNING: [youtube] ukzOgoLjHLk: android client https formats require a GVS PO Token which was not provided. They will be skipped as they may yield HTTP Error 403. You can manually pass a GVS PO Token for this client with --extractor-args "youtube:po_token=android.gvs+XXX". For more information, refer to  https://github.com/yt-dlp/yt-dlp/wiki/PO-Token-Guide
+2026-03-22 20:12:21 +05:30: ⚠️  Info: ERROR: [youtube] ukzOgoLjHLk: Requested format is not available. Use --list-formats for a list of available formats
+2026-03-22 20:13:22 +05:30: 
+⬇️  Starting video download (Quality: best) from: https://www.pornhub.org/view_video.php?viewkey=63e1472693b76
+2026-03-22 20:13:22 +05:30: 🔧 Command: yt-dlp --no-playlist --js-runtimes node -f "best[ext=mp4]" --socket-timeout 30 --extractor-args "youtube:player_client=web,tvhtml5,android,mweb" -o "C:\Users\neon\Downloads\%(title)s.%(ext)s" "[URL]"
+2026-03-22 20:13:23 +05:30: 📊 Progress: [PornHub] Extracting URL: https://www.pornhub.org/view_video.php?viewkey=63e1472693b76
+2026-03-22 20:13:23 +05:30: 📊 Progress: [PornHub] 63e1472693b76: Downloading pc webpage
+2026-03-22 20:13:25 +05:30: ⚠️  Info: ERROR: [PornHub] 63e1472693b76: Unable to download webpage: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (caused by SSLError('[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028)')); please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U
+2026-03-22 20:13:53 +05:30: 
+⬇️  Starting image download (Quality: best) from: https://www.youtube.com/watch?v=vNsoHV8YtE4&list=RDvNsoHV8YtE4&start_radio=1
+2026-03-22 20:13:53 +05:30: 🔧 Command: yt-dlp --no-playlist --js-runtimes node --write-thumbnail --socket-timeout 30 --extractor-args "youtube:player_client=web,tvhtml5,android,mweb" -o "C:\Users\neon\Downloads\%(title)s-%(id)s.%(ext)s" "[URL]"
+2026-03-22 20:13:54 +05:30: 📊 Progress: [youtube:tab] Extracting URL: https://www.youtube.com/watch?v=vNsoHV8YtE4&list=RDvNsoHV8YtE4&start_radio=1
+2026-03-22 20:13:54 +05:30: 📊 Progress: [youtube:tab] Downloading just the video vNsoHV8YtE4 because of --no-playlist
+2026-03-22 20:13:54 +05:30: 📊 Progress: [youtube] Extracting URL: https://www.youtube.com/watch?v=vNsoHV8YtE4
+2026-03-22 20:13:54 +05:30: 📊 Progress: [youtube] vNsoHV8YtE4: Downloading webpage
+2026-03-22 20:13:55 +05:30: ⚠️  Info: WARNING: [youtube] Skipping unsupported client "tvhtml5"
+2026-03-22 20:13:55 +05:30: 📊 Progress: [youtube] vNsoHV8YtE4: Downloading web player API JSON
+2026-03-22 20:13:56 +05:30: 📊 Progress: [youtube] vNsoHV8YtE4: Downloading android player API JSON
+2026-03-22 20:13:56 +05:30: 📊 Progress: [youtube] vNsoHV8YtE4: Downloading mweb client config
+2026-03-22 20:13:56 +05:30: 📊 Progress: [youtube] vNsoHV8YtE4: Downloading mweb player API JSON
+2026-03-22 20:13:57 +05:30: ⚠️  Info: WARNING: [youtube] vNsoHV8YtE4: android client https formats require a GVS PO Token which was not provided. They will be skipped as they may yield HTTP Error 403. You can manually pass a GVS PO Token for this client with --extractor-args "youtube:po_token=android.gvs+XXX". For more information, refer to  https://github.com/yt-dlp/yt-dlp/wiki/PO-Token-Guide
+2026-03-22 20:13:57 +05:30: 📊 Progress: [info] vNsoHV8YtE4: Downloading 1 format(s): 18
+2026-03-22 20:13:57 +05:30: 📊 Progress: [info] Downloading video thumbnail 42 ...
+2026-03-22 20:13:58 +05:30: 📊 Progress: [info] Writing video thumbnail 42 to: C:\Users\neon\Downloads\ feat. shully [Lyrics Romaji] (Miracle Sugite Yabai)-vNsoHV8YtE4.webp
+2026-03-22 20:13:59 +05:30: 📊 Progress: [download] Destination: C:\Users\neon\Downloads\ feat. shully [Lyrics Romaji] (Miracle Sugite Yabai)-vNsoHV8YtE4.mp4
+2026-03-22 20:13:59 +05:30: 📊 Progress: [download]   0.0% of    9.52MiB at  Unknown B/s ETA Unknown
+2026-03-22 20:13:59 +05:30: 📊 Progress: [download]   0.0% of    9.52MiB at  908.91KiB/s ETA 00:10
+2026-03-22 20:13:59 +05:30: 📊 Progress: [download]   0.1% of    9.52MiB at   96.92KiB/s ETA 01:40
+2026-03-22 20:13:59 +05:30: 📊 Progress: [download]   0.2% of    9.52MiB at  205.66KiB/s ETA 00:47
+2026-03-22 20:13:59 +05:30: 📊 Progress: [download]   0.3% of    9.52MiB at  365.08KiB/s ETA 00:26
+2026-03-22 20:13:59 +05:30: 📊 Progress: [download]   0.6% of    9.52MiB at  417.13KiB/s ETA 00:23
+2026-03-22 20:13:59 +05:30: 📊 Progress: [download]   1.3% of    9.52MiB at  594.89KiB/s ETA 00:16
+2026-03-22 20:13:59 +05:30: 📊 Progress: [download]   2.6% of    9.52MiB at  887.61KiB/s ETA 00:10
+2026-03-22 20:13:59 +05:30: 📊 Progress: [download]   5.2% of    9.52MiB at    1.44MiB/s ETA 00:06
+2026-03-22 20:13:59 +05:30: 📊 Progress: [download]  10.5% of    9.52MiB at    2.36MiB/s ETA 00:03
+2026-03-22 20:13:59 +05:30: 📊 Progress: [download]  21.0% of    9.52MiB at    3.95MiB/s ETA 00:01
+2026-03-22 20:14:00 +05:30: 📊 Progress: [download]  42.0% of    9.52MiB at    4.04MiB/s ETA 00:01
+2026-03-22 20:14:01 +05:30: 📊 Progress: [download]  84.0% of    9.52MiB at    3.49MiB/s ETA 00:00
+2026-03-22 20:14:02 +05:30: 📊 Progress: [download] 100.0% of    9.52MiB at    3.36MiB/s ETA 00:00
+2026-03-22 20:14:02 +05:30: 📊 Progress: [download] 100% of    9.52MiB in 00:00:03 at 2.49MiB/s
+2026-03-22 20:14:02 +05:30: 📊 Progress: 
+2026-03-22 20:14:02 +05:30: ✅ Download completed!
